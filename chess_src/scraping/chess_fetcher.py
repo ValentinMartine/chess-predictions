@@ -19,7 +19,7 @@ class ChessDataFetcher:
                 {
                     "name": p["name"],
                     "fide_id": p["fide_id"],
-                    "live_rating": p["rating_april_2006"],
+                    "live_rating": p["rating_april_2026"],
                 }
             )
         return pd.DataFrame(data)

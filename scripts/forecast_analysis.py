@@ -30,7 +30,7 @@ def run_analysis():
 
     players = config["players"]
     player_map = {p["fide_id"]: p["name"] for p in players}
-    elo_map = {p["fide_id"]: p["rating_april_2006"] for p in players}
+    elo_map = {p["fide_id"]: p["rating_april_2026"] for p in players}
 
     model_path = PROJECT_ROOT / "data" / "chess_lgbm.pkl"
     if not model_path.exists():

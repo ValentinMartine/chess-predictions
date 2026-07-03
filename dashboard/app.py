@@ -8,15 +8,11 @@ import os
 import numpy as np
 from pathlib import Path
 
-# Pathing and namespace mapping for unpickling
+# Résolution des chemins du projet
 SCRIPT_DIR = Path(__file__).parent.absolute()
 PROJECT_ROOT = SCRIPT_DIR.parent
 sys.path.append(str(PROJECT_ROOT))
 sys.path.append(str(PROJECT_ROOT / "chess_src"))
-
-import chess_src.models.lgbm_model
-
-sys.modules["src.models.lgbm_model"] = chess_src.models.lgbm_model
 
 from chess_src.models.lgbm_model import ChessLGBMModel
 from chess_src.features.pipeline import ChessFeaturePipeline
@@ -128,7 +124,7 @@ def render_tournament_tab(db_path, fide_ids, tournament, model_path, config_path
 
     # Standings
     with col1:
-        st.subheader("📊 Classement actuel")
+        st.subheader("Classement actuel")
         standings = get_standings(db_path, fide_ids, tournament)
         standings.insert(0, "#", range(1, len(standings) + 1))
         st.dataframe(standings, hide_index=True, use_container_width=True)
@@ -223,7 +219,7 @@ def render_tournament_tab(db_path, fide_ids, tournament, model_path, config_path
     st.divider()
     st.subheader("📈 Prévision du tournoi - simulation Monte Carlo")
 
-    if st.button("🚀 Lancer 1 000 simulations", key=f"mc_{tournament}"):
+    if st.button("Lancer 1 000 simulations", key=f"mc_{tournament}"):
         with st.spinner("Simulation en cours…"):
             try:
                 _model = ChessLGBMModel.load(model_path)

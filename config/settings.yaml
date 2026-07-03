@@ -3,35 +3,35 @@
 players:
   - name: "Hikaru Nakamura"
     fide_id: 2004887
-    rating_april_2006: 2810
+    rating_april_2026: 2810
     country: "USA"
   - name: "Fabiano Caruana"
     fide_id: 2020009
-    rating_april_2006: 2795
+    rating_april_2026: 2795
     country: "USA"
   - name: "Wei Yi"
     fide_id: 8603405
-    rating_april_2006: 2754
+    rating_april_2026: 2754
     country: "CHN"
   - name: "Anish Giri"
     fide_id: 24116068
-    rating_april_2006: 2753
+    rating_april_2026: 2753
     country: "NED"
   - name: "Javokhir Sindarov"
     fide_id: 14205481
-    rating_april_2006: 2745
+    rating_april_2026: 2745
     country: "UZB"
   - name: "R. Praggnanandhaa"
     fide_id: 25059650
-    rating_april_2006: 2741
+    rating_april_2026: 2741
     country: "IND"
   - name: "Matthias Bluebaum"
     fide_id: 4661654
-    rating_april_2006: 2698
+    rating_april_2026: 2698
     country: "GER"
   - name: "Andrey Esipenko"
     fide_id: 24175439
-    rating_april_2006: 2698
+    rating_april_2026: 2698
     country: "FID"
 
 # Model hyperparameters (Multiclass LightGBM - tuned for small dataset ~70 rows)

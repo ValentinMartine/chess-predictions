@@ -1,0 +1,3885 @@
+{
+  "generated_at": "2026-07-02T15:26:02+00:00",
+  "source": "chess_candidates_2026_predictions",
+  "method": "LightGBM multiclasse calibré + simulation Monte-Carlo (1 000 tirages)",
+  "tournaments": [
+    {
+      "id": "candidates_2026_open",
+      "name": "FIDE Candidates 2026",
+      "section": "open",
+      "format": "Double Round Robin",
+      "rounds_total": 14,
+      "location": "Cyprus",
+      "start_date": "2026-04-01",
+      "n_simulations": 1000,
+      "actual_winner": "Javokhir Sindarov",
+      "final_standings": [
+        {
+          "player": "Javokhir Sindarov",
+          "country": "UZB",
+          "elo": 2745,
+          "points": 10.0,
+          "games_played": 14,
+          "fide_id": 14205481,
+          "rank": 1
+        },
+        {
+          "player": "Anish Giri",
+          "country": "NED",
+          "elo": 2753,
+          "points": 8.5,
+          "games_played": 14,
+          "fide_id": 24116068,
+          "rank": 2
+        },
+        {
+          "player": "Fabiano Caruana",
+          "country": "USA",
+          "elo": 2795,
+          "points": 7.5,
+          "games_played": 14,
+          "fide_id": 2020009,
+          "rank": 3
+        },
+        {
+          "player": "Wei Yi",
+          "country": "CHN",
+          "elo": 2754,
+          "points": 7.0,
+          "games_played": 14,
+          "fide_id": 8603405,
+          "rank": 4
+        },
+        {
+          "player": "Hikaru Nakamura",
+          "country": "USA",
+          "elo": 2810,
+          "points": 6.5,
+          "games_played": 14,
+          "fide_id": 2004887,
+          "rank": 5
+        },
+        {
+          "player": "R. Praggnanandhaa",
+          "country": "IND",
+          "elo": 2741,
+          "points": 6.0,
+          "games_played": 14,
+          "fide_id": 25059650,
+          "rank": 6
+        },
+        {
+          "player": "Matthias Bluebaum",
+          "country": "GER",
+          "elo": 2698,
+          "points": 6.0,
+          "games_played": 14,
+          "fide_id": 4661654,
+          "rank": 7
+        },
+        {
+          "player": "Andrey Esipenko",
+          "country": "FID",
+          "elo": 2698,
+          "points": 4.5,
+          "games_played": 14,
+          "fide_id": 24175439,
+          "rank": 8
+        }
+      ],
+      "rounds": [
+        {
+          "round": 1,
+          "standings": [
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 1.0,
+              "games_played": 1,
+              "fide_id": 2020009,
+              "rank": 1
+            },
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 1.0,
+              "games_played": 1,
+              "fide_id": 14205481,
+              "rank": 2
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 1.0,
+              "games_played": 1,
+              "fide_id": 25059650,
+              "rank": 3
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 8603405,
+              "rank": 4
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 4661654,
+              "rank": 5
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 0.0,
+              "games_played": 1,
+              "fide_id": 2004887,
+              "rank": 6
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 0.0,
+              "games_played": 1,
+              "fide_id": 24116068,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 0.0,
+              "games_played": 1,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.295,
+              "ci95_low": 0.2667,
+              "ci95_high": 0.3233
+            },
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.241,
+              "ci95_low": 0.2145,
+              "ci95_high": 0.2675
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.237,
+              "ci95_low": 0.2106,
+              "ci95_high": 0.2634
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.067,
+              "ci95_low": 0.0515,
+              "ci95_high": 0.0825
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.065,
+              "ci95_low": 0.0497,
+              "ci95_high": 0.0803
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.054,
+              "ci95_low": 0.04,
+              "ci95_high": 0.068
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.021,
+              "ci95_low": 0.0121,
+              "ci95_high": 0.0299
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.02,
+              "ci95_low": 0.0113,
+              "ci95_high": 0.0287
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "standings": [
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 1.5,
+              "games_played": 2,
+              "fide_id": 2020009,
+              "rank": 1
+            },
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 1.5,
+              "games_played": 2,
+              "fide_id": 14205481,
+              "rank": 2
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 1.5,
+              "games_played": 2,
+              "fide_id": 25059650,
+              "rank": 3
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 8603405,
+              "rank": 4
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 4661654,
+              "rank": 5
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 0.5,
+              "games_played": 2,
+              "fide_id": 2004887,
+              "rank": 6
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 0.5,
+              "games_played": 2,
+              "fide_id": 24116068,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 0.5,
+              "games_played": 2,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.262,
+              "ci95_low": 0.2347,
+              "ci95_high": 0.2893
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.19,
+              "ci95_low": 0.1657,
+              "ci95_high": 0.2143
+            },
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.166,
+              "ci95_low": 0.1429,
+              "ci95_high": 0.1891
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.113,
+              "ci95_low": 0.0934,
+              "ci95_high": 0.1326
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.096,
+              "ci95_low": 0.0777,
+              "ci95_high": 0.1143
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.088,
+              "ci95_low": 0.0704,
+              "ci95_high": 0.1056
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.046,
+              "ci95_low": 0.033,
+              "ci95_high": 0.059
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.039,
+              "ci95_low": 0.027,
+              "ci95_high": 0.051
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "standings": [
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 2.5,
+              "games_played": 3,
+              "fide_id": 2020009,
+              "rank": 1
+            },
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 2.5,
+              "games_played": 3,
+              "fide_id": 14205481,
+              "rank": 2
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 1.5,
+              "games_played": 3,
+              "fide_id": 25059650,
+              "rank": 3
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 1.5,
+              "games_played": 3,
+              "fide_id": 4661654,
+              "rank": 4
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 1.0,
+              "games_played": 3,
+              "fide_id": 2004887,
+              "rank": 5
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 1.0,
+              "games_played": 3,
+              "fide_id": 8603405,
+              "rank": 6
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 1.0,
+              "games_played": 3,
+              "fide_id": 24116068,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 1.0,
+              "games_played": 3,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.341,
+              "ci95_low": 0.3116,
+              "ci95_high": 0.3704
+            },
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.285,
+              "ci95_low": 0.257,
+              "ci95_high": 0.313
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.09,
+              "ci95_low": 0.0723,
+              "ci95_high": 0.1077
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.067,
+              "ci95_low": 0.0515,
+              "ci95_high": 0.0825
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.061,
+              "ci95_low": 0.0462,
+              "ci95_high": 0.0758
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.059,
+              "ci95_low": 0.0444,
+              "ci95_high": 0.0736
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.054,
+              "ci95_low": 0.04,
+              "ci95_high": 0.068
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.043,
+              "ci95_low": 0.0304,
+              "ci95_high": 0.0556
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 3.5,
+              "games_played": 4,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 2.5,
+              "games_played": 4,
+              "fide_id": 2020009,
+              "rank": 2
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 2.0,
+              "games_played": 4,
+              "fide_id": 24116068,
+              "rank": 3
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 2.0,
+              "games_played": 4,
+              "fide_id": 25059650,
+              "rank": 4
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 2.0,
+              "games_played": 4,
+              "fide_id": 4661654,
+              "rank": 5
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 1.5,
+              "games_played": 4,
+              "fide_id": 2004887,
+              "rank": 6
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 1.5,
+              "games_played": 4,
+              "fide_id": 8603405,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 1.0,
+              "games_played": 4,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.554,
+              "ci95_low": 0.5232,
+              "ci95_high": 0.5848
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.194,
+              "ci95_low": 0.1695,
+              "ci95_high": 0.2185
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.122,
+              "ci95_low": 0.1017,
+              "ci95_high": 0.1423
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.039,
+              "ci95_low": 0.027,
+              "ci95_high": 0.051
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.035,
+              "ci95_low": 0.0236,
+              "ci95_high": 0.0464
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.027,
+              "ci95_low": 0.017,
+              "ci95_high": 0.037
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.023,
+              "ci95_low": 0.0137,
+              "ci95_high": 0.0323
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.006,
+              "ci95_low": 0.0012,
+              "ci95_high": 0.0108
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 4.5,
+              "games_played": 5,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 3.5,
+              "games_played": 5,
+              "fide_id": 2020009,
+              "rank": 2
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 2.5,
+              "games_played": 5,
+              "fide_id": 24116068,
+              "rank": 3
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 2.5,
+              "games_played": 5,
+              "fide_id": 25059650,
+              "rank": 4
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 2.0,
+              "games_played": 5,
+              "fide_id": 8603405,
+              "rank": 5
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 2.0,
+              "games_played": 5,
+              "fide_id": 4661654,
+              "rank": 6
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 1.5,
+              "games_played": 5,
+              "fide_id": 2004887,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 1.5,
+              "games_played": 5,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.674,
+              "ci95_low": 0.6449,
+              "ci95_high": 0.7031
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.209,
+              "ci95_low": 0.1838,
+              "ci95_high": 0.2342
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.042,
+              "ci95_low": 0.0296,
+              "ci95_high": 0.0544
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.041,
+              "ci95_low": 0.0287,
+              "ci95_high": 0.0533
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.015,
+              "ci95_low": 0.0075,
+              "ci95_high": 0.0225
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.01,
+              "ci95_low": 0.0038,
+              "ci95_high": 0.0162
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.007,
+              "ci95_low": 0.0018,
+              "ci95_high": 0.0122
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.002,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0048
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 5.5,
+              "games_played": 6,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 4.0,
+              "games_played": 6,
+              "fide_id": 2020009,
+              "rank": 2
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 3.0,
+              "games_played": 6,
+              "fide_id": 24116068,
+              "rank": 3
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 3.0,
+              "games_played": 6,
+              "fide_id": 25059650,
+              "rank": 4
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 2.5,
+              "games_played": 6,
+              "fide_id": 4661654,
+              "rank": 5
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 2.0,
+              "games_played": 6,
+              "fide_id": 2004887,
+              "rank": 6
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 2.0,
+              "games_played": 6,
+              "fide_id": 8603405,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 2.0,
+              "games_played": 6,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.83,
+              "ci95_low": 0.8067,
+              "ci95_high": 0.8533
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.135,
+              "ci95_low": 0.1138,
+              "ci95_high": 0.1562
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.013,
+              "ci95_low": 0.006,
+              "ci95_high": 0.02
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.011,
+              "ci95_low": 0.0045,
+              "ci95_high": 0.0175
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.007,
+              "ci95_low": 0.0018,
+              "ci95_high": 0.0122
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.003,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0064
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.001,
+              "ci95_low": 0.0,
+              "ci95_high": 0.003
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 6.0,
+              "games_played": 7,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 4.5,
+              "games_played": 7,
+              "fide_id": 2020009,
+              "rank": 2
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 3.5,
+              "games_played": 7,
+              "fide_id": 24116068,
+              "rank": 3
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 3.5,
+              "games_played": 7,
+              "fide_id": 25059650,
+              "rank": 4
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 3.0,
+              "games_played": 7,
+              "fide_id": 8603405,
+              "rank": 5
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 3.0,
+              "games_played": 7,
+              "fide_id": 4661654,
+              "rank": 6
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 2.5,
+              "games_played": 7,
+              "fide_id": 2004887,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 2.0,
+              "games_played": 7,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.829,
+              "ci95_low": 0.8057,
+              "ci95_high": 0.8523
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.119,
+              "ci95_low": 0.0989,
+              "ci95_high": 0.1391
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.029,
+              "ci95_low": 0.0186,
+              "ci95_high": 0.0394
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.01,
+              "ci95_low": 0.0038,
+              "ci95_high": 0.0162
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.009,
+              "ci95_low": 0.0031,
+              "ci95_high": 0.0149
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.004,
+              "ci95_low": 0.0001,
+              "ci95_high": 0.0079
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 6.5,
+              "games_played": 8,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 4.5,
+              "games_played": 8,
+              "fide_id": 2020009,
+              "rank": 2
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 4.5,
+              "games_played": 8,
+              "fide_id": 24116068,
+              "rank": 3
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 3.5,
+              "games_played": 8,
+              "fide_id": 2004887,
+              "rank": 4
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 3.5,
+              "games_played": 8,
+              "fide_id": 8603405,
+              "rank": 5
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 3.5,
+              "games_played": 8,
+              "fide_id": 25059650,
+              "rank": 6
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 3.5,
+              "games_played": 8,
+              "fide_id": 4661654,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 2.5,
+              "games_played": 8,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.852,
+              "ci95_low": 0.83,
+              "ci95_high": 0.874
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.09,
+              "ci95_low": 0.0723,
+              "ci95_high": 0.1077
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.031,
+              "ci95_low": 0.0203,
+              "ci95_high": 0.0417
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.014,
+              "ci95_low": 0.0067,
+              "ci95_high": 0.0213
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.005,
+              "ci95_low": 0.0006,
+              "ci95_high": 0.0094
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.005,
+              "ci95_low": 0.0006,
+              "ci95_high": 0.0094
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.003,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0064
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 7.0,
+              "games_played": 9,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 5.5,
+              "games_played": 9,
+              "fide_id": 24116068,
+              "rank": 2
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 4.5,
+              "games_played": 9,
+              "fide_id": 2020009,
+              "rank": 3
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 4.0,
+              "games_played": 9,
+              "fide_id": 2004887,
+              "rank": 4
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 4.0,
+              "games_played": 9,
+              "fide_id": 8603405,
+              "rank": 5
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 4.0,
+              "games_played": 9,
+              "fide_id": 25059650,
+              "rank": 6
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 4.0,
+              "games_played": 9,
+              "fide_id": 4661654,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 3.0,
+              "games_played": 9,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.913,
+              "ci95_low": 0.8955,
+              "ci95_high": 0.9305
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.072,
+              "ci95_low": 0.056,
+              "ci95_high": 0.088
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.009,
+              "ci95_low": 0.0031,
+              "ci95_high": 0.0149
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.002,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0048
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.002,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0048
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.001,
+              "ci95_low": 0.0,
+              "ci95_high": 0.003
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.001,
+              "ci95_low": 0.0,
+              "ci95_high": 0.003
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 10,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 8.0,
+              "games_played": 10,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 6.0,
+              "games_played": 10,
+              "fide_id": 24116068,
+              "rank": 2
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 5.0,
+              "games_played": 10,
+              "fide_id": 2020009,
+              "rank": 3
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 4.5,
+              "games_played": 10,
+              "fide_id": 2004887,
+              "rank": 4
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 4.5,
+              "games_played": 10,
+              "fide_id": 8603405,
+              "rank": 5
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 4.5,
+              "games_played": 10,
+              "fide_id": 4661654,
+              "rank": 6
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 4.0,
+              "games_played": 10,
+              "fide_id": 25059650,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 3.5,
+              "games_played": 10,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.971,
+              "ci95_low": 0.9606,
+              "ci95_high": 0.9814
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.025,
+              "ci95_low": 0.0153,
+              "ci95_high": 0.0347
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.004,
+              "ci95_low": 0.0001,
+              "ci95_high": 0.0079
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 11,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 8.5,
+              "games_played": 11,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 6.5,
+              "games_played": 11,
+              "fide_id": 24116068,
+              "rank": 2
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 5.5,
+              "games_played": 11,
+              "fide_id": 2020009,
+              "rank": 3
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 5.0,
+              "games_played": 11,
+              "fide_id": 2004887,
+              "rank": 4
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 5.0,
+              "games_played": 11,
+              "fide_id": 8603405,
+              "rank": 5
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 5.0,
+              "games_played": 11,
+              "fide_id": 4661654,
+              "rank": 6
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 4.5,
+              "games_played": 11,
+              "fide_id": 25059650,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 4.0,
+              "games_played": 11,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.993,
+              "ci95_low": 0.9878,
+              "ci95_high": 0.9982
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.007,
+              "ci95_low": 0.0018,
+              "ci95_high": 0.0122
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 12,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 9.0,
+              "games_played": 12,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 7.0,
+              "games_played": 12,
+              "fide_id": 24116068,
+              "rank": 2
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 6.0,
+              "games_played": 12,
+              "fide_id": 2020009,
+              "rank": 3
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 5.5,
+              "games_played": 12,
+              "fide_id": 2004887,
+              "rank": 4
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 5.5,
+              "games_played": 12,
+              "fide_id": 8603405,
+              "rank": 5
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 5.5,
+              "games_played": 12,
+              "fide_id": 4661654,
+              "rank": 6
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 5.0,
+              "games_played": 12,
+              "fide_id": 25059650,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 4.5,
+              "games_played": 12,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 0.999,
+              "ci95_low": 0.997,
+              "ci95_high": 1.0
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.001,
+              "ci95_low": 0.0,
+              "ci95_high": 0.003
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 13,
+          "standings": [
+            {
+              "player": "Javokhir Sindarov",
+              "country": "UZB",
+              "elo": 2745,
+              "points": 9.5,
+              "games_played": 13,
+              "fide_id": 14205481,
+              "rank": 1
+            },
+            {
+              "player": "Anish Giri",
+              "country": "NED",
+              "elo": 2753,
+              "points": 7.5,
+              "games_played": 13,
+              "fide_id": 24116068,
+              "rank": 2
+            },
+            {
+              "player": "Fabiano Caruana",
+              "country": "USA",
+              "elo": 2795,
+              "points": 6.5,
+              "games_played": 13,
+              "fide_id": 2020009,
+              "rank": 3
+            },
+            {
+              "player": "Wei Yi",
+              "country": "CHN",
+              "elo": 2754,
+              "points": 6.5,
+              "games_played": 13,
+              "fide_id": 8603405,
+              "rank": 4
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "country": "USA",
+              "elo": 2810,
+              "points": 6.0,
+              "games_played": 13,
+              "fide_id": 2004887,
+              "rank": 5
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "country": "GER",
+              "elo": 2698,
+              "points": 6.0,
+              "games_played": 13,
+              "fide_id": 4661654,
+              "rank": 6
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "country": "IND",
+              "elo": 2741,
+              "points": 5.5,
+              "games_played": 13,
+              "fide_id": 25059650,
+              "rank": 7
+            },
+            {
+              "player": "Andrey Esipenko",
+              "country": "FID",
+              "elo": 2698,
+              "points": 4.5,
+              "games_played": 13,
+              "fide_id": 24175439,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Javokhir Sindarov",
+              "fide_id": 14205481,
+              "p_win": 1.0,
+              "ci95_low": 1.0,
+              "ci95_high": 1.0
+            },
+            {
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        }
+      ],
+      "performance": {
+        "by_round": [
+          {
+            "round": 1,
+            "top_pick": "Fabiano Caruana",
+            "top_pick_prob": 0.295,
+            "winner_prob": 0.241,
+            "hit": false
+          },
+          {
+            "round": 2,
+            "top_pick": "Fabiano Caruana",
+            "top_pick_prob": 0.262,
+            "winner_prob": 0.166,
+            "hit": false
+          },
+          {
+            "round": 3,
+            "top_pick": "Fabiano Caruana",
+            "top_pick_prob": 0.341,
+            "winner_prob": 0.285,
+            "hit": false
+          },
+          {
+            "round": 4,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.554,
+            "winner_prob": 0.554,
+            "hit": true
+          },
+          {
+            "round": 5,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.674,
+            "winner_prob": 0.674,
+            "hit": true
+          },
+          {
+            "round": 6,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.83,
+            "winner_prob": 0.83,
+            "hit": true
+          },
+          {
+            "round": 7,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.829,
+            "winner_prob": 0.829,
+            "hit": true
+          },
+          {
+            "round": 8,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.852,
+            "winner_prob": 0.852,
+            "hit": true
+          },
+          {
+            "round": 9,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.913,
+            "winner_prob": 0.913,
+            "hit": true
+          },
+          {
+            "round": 10,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.971,
+            "winner_prob": 0.971,
+            "hit": true
+          },
+          {
+            "round": 11,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.993,
+            "winner_prob": 0.993,
+            "hit": true
+          },
+          {
+            "round": 12,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 0.999,
+            "winner_prob": 0.999,
+            "hit": true
+          },
+          {
+            "round": 13,
+            "top_pick": "Javokhir Sindarov",
+            "top_pick_prob": 1.0,
+            "winner_prob": 1.0,
+            "hit": true
+          }
+        ],
+        "converged_from_round": 4,
+        "mean_winner_prob": 0.7159
+      }
+    },
+    {
+      "id": "candidates_2026_women",
+      "name": "FIDE Women's Candidates 2026",
+      "section": "women",
+      "format": "Double Round Robin",
+      "rounds_total": 14,
+      "location": "Cyprus",
+      "start_date": "2026-04-01",
+      "n_simulations": 1000,
+      "actual_winner": "Vaishali Rameshbabu",
+      "final_standings": [
+        {
+          "player": "Vaishali Rameshbabu",
+          "country": "IND",
+          "elo": 2522,
+          "points": 8.5,
+          "games_played": 14,
+          "fide_id": 5091756,
+          "rank": 1
+        },
+        {
+          "player": "Bibisara Assaubayeva",
+          "country": "KAZ",
+          "elo": 2478,
+          "points": 8.0,
+          "games_played": 14,
+          "fide_id": 13708694,
+          "rank": 2
+        },
+        {
+          "player": "Aleksandra Goryachkina",
+          "country": "FID",
+          "elo": 2560,
+          "points": 7.5,
+          "games_played": 14,
+          "fide_id": 4147103,
+          "rank": 3
+        },
+        {
+          "player": "Zhu Jiner",
+          "country": "CHN",
+          "elo": 2528,
+          "points": 7.5,
+          "games_played": 14,
+          "fide_id": 8608059,
+          "rank": 4
+        },
+        {
+          "player": "Anna Muzychuk",
+          "country": "UKR",
+          "elo": 2518,
+          "points": 7.0,
+          "games_played": 14,
+          "fide_id": 14111330,
+          "rank": 5
+        },
+        {
+          "player": "Kateryna Lagno",
+          "country": "FID",
+          "elo": 2530,
+          "points": 6.5,
+          "games_played": 14,
+          "fide_id": 14109336,
+          "rank": 6
+        },
+        {
+          "player": "Divya Deshmukh",
+          "country": "IND",
+          "elo": 2548,
+          "points": 5.5,
+          "games_played": 14,
+          "fide_id": 35006916,
+          "rank": 7
+        },
+        {
+          "player": "Tan Zhongyi",
+          "country": "CHN",
+          "elo": 2510,
+          "points": 5.5,
+          "games_played": 14,
+          "fide_id": 8603642,
+          "rank": 8
+        }
+      ],
+      "rounds": [
+        {
+          "round": 1,
+          "standings": [
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 4147103,
+              "rank": 1
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 35006916,
+              "rank": 2
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 14109336,
+              "rank": 3
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 8608059,
+              "rank": 4
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 5091756,
+              "rank": 5
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 14111330,
+              "rank": 6
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 8603642,
+              "rank": 7
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 0.5,
+              "games_played": 1,
+              "fide_id": 13708694,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.221,
+              "ci95_low": 0.1953,
+              "ci95_high": 0.2467
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.172,
+              "ci95_low": 0.1486,
+              "ci95_high": 0.1954
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.148,
+              "ci95_low": 0.126,
+              "ci95_high": 0.17
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.143,
+              "ci95_low": 0.1213,
+              "ci95_high": 0.1647
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.098,
+              "ci95_low": 0.0796,
+              "ci95_high": 0.1164
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.087,
+              "ci95_low": 0.0695,
+              "ci95_high": 0.1045
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.069,
+              "ci95_low": 0.0533,
+              "ci95_high": 0.0847
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.062,
+              "ci95_low": 0.0471,
+              "ci95_high": 0.0769
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "standings": [
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 4147103,
+              "rank": 1
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 35006916,
+              "rank": 2
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 14109336,
+              "rank": 3
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 8608059,
+              "rank": 4
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 5091756,
+              "rank": 5
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 14111330,
+              "rank": 6
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 8603642,
+              "rank": 7
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 1.0,
+              "games_played": 2,
+              "fide_id": 13708694,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.189,
+              "ci95_low": 0.1647,
+              "ci95_high": 0.2133
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.152,
+              "ci95_low": 0.1297,
+              "ci95_high": 0.1743
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.129,
+              "ci95_low": 0.1082,
+              "ci95_high": 0.1498
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.126,
+              "ci95_low": 0.1054,
+              "ci95_high": 0.1466
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.125,
+              "ci95_low": 0.1045,
+              "ci95_high": 0.1455
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.108,
+              "ci95_low": 0.0888,
+              "ci95_high": 0.1272
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.099,
+              "ci95_low": 0.0805,
+              "ci95_high": 0.1175
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.072,
+              "ci95_low": 0.056,
+              "ci95_high": 0.088
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "standings": [
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 2.0,
+              "games_played": 3,
+              "fide_id": 14109336,
+              "rank": 1
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 2.0,
+              "games_played": 3,
+              "fide_id": 13708694,
+              "rank": 2
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 1.5,
+              "games_played": 3,
+              "fide_id": 4147103,
+              "rank": 3
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 1.5,
+              "games_played": 3,
+              "fide_id": 35006916,
+              "rank": 4
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 1.5,
+              "games_played": 3,
+              "fide_id": 5091756,
+              "rank": 5
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 1.5,
+              "games_played": 3,
+              "fide_id": 14111330,
+              "rank": 6
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 1.0,
+              "games_played": 3,
+              "fide_id": 8608059,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 1.0,
+              "games_played": 3,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.253,
+              "ci95_low": 0.2261,
+              "ci95_high": 0.2799
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.189,
+              "ci95_low": 0.1647,
+              "ci95_high": 0.2133
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.151,
+              "ci95_low": 0.1288,
+              "ci95_high": 0.1732
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.135,
+              "ci95_low": 0.1138,
+              "ci95_high": 0.1562
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.131,
+              "ci95_low": 0.1101,
+              "ci95_high": 0.1519
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.102,
+              "ci95_low": 0.0832,
+              "ci95_high": 0.1208
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.025,
+              "ci95_low": 0.0153,
+              "ci95_high": 0.0347
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.014,
+              "ci95_low": 0.0067,
+              "ci95_high": 0.0213
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "standings": [
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 2.5,
+              "games_played": 4,
+              "fide_id": 14111330,
+              "rank": 1
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 2.5,
+              "games_played": 4,
+              "fide_id": 13708694,
+              "rank": 2
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 2.0,
+              "games_played": 4,
+              "fide_id": 4147103,
+              "rank": 3
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 2.0,
+              "games_played": 4,
+              "fide_id": 14109336,
+              "rank": 4
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 2.0,
+              "games_played": 4,
+              "fide_id": 8608059,
+              "rank": 5
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 2.0,
+              "games_played": 4,
+              "fide_id": 5091756,
+              "rank": 6
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 1.5,
+              "games_played": 4,
+              "fide_id": 35006916,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 1.5,
+              "games_played": 4,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.219,
+              "ci95_low": 0.1934,
+              "ci95_high": 0.2446
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.194,
+              "ci95_low": 0.1695,
+              "ci95_high": 0.2185
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.175,
+              "ci95_low": 0.1514,
+              "ci95_high": 0.1986
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.134,
+              "ci95_low": 0.1129,
+              "ci95_high": 0.1551
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.116,
+              "ci95_low": 0.0962,
+              "ci95_high": 0.1358
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.098,
+              "ci95_low": 0.0796,
+              "ci95_high": 0.1164
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.043,
+              "ci95_low": 0.0304,
+              "ci95_high": 0.0556
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.021,
+              "ci95_low": 0.0121,
+              "ci95_high": 0.0299
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "standings": [
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 3.0,
+              "games_played": 5,
+              "fide_id": 14109336,
+              "rank": 1
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 3.0,
+              "games_played": 5,
+              "fide_id": 8608059,
+              "rank": 2
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 3.0,
+              "games_played": 5,
+              "fide_id": 14111330,
+              "rank": 3
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 2.5,
+              "games_played": 5,
+              "fide_id": 4147103,
+              "rank": 4
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 2.5,
+              "games_played": 5,
+              "fide_id": 13708694,
+              "rank": 5
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 2.0,
+              "games_played": 5,
+              "fide_id": 35006916,
+              "rank": 6
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 2.0,
+              "games_played": 5,
+              "fide_id": 5091756,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 2.0,
+              "games_played": 5,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.315,
+              "ci95_low": 0.2862,
+              "ci95_high": 0.3438
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.271,
+              "ci95_low": 0.2435,
+              "ci95_high": 0.2985
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.146,
+              "ci95_low": 0.1241,
+              "ci95_high": 0.1679
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.123,
+              "ci95_low": 0.1026,
+              "ci95_high": 0.1434
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.088,
+              "ci95_low": 0.0704,
+              "ci95_high": 0.1056
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.021,
+              "ci95_low": 0.0121,
+              "ci95_high": 0.0299
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.02,
+              "ci95_low": 0.0113,
+              "ci95_high": 0.0287
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.016,
+              "ci95_low": 0.0082,
+              "ci95_high": 0.0238
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "standings": [
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 4.0,
+              "games_played": 6,
+              "fide_id": 14111330,
+              "rank": 1
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 3.0,
+              "games_played": 6,
+              "fide_id": 4147103,
+              "rank": 2
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 3.0,
+              "games_played": 6,
+              "fide_id": 35006916,
+              "rank": 3
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 3.0,
+              "games_played": 6,
+              "fide_id": 14109336,
+              "rank": 4
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 3.0,
+              "games_played": 6,
+              "fide_id": 8608059,
+              "rank": 5
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 3.0,
+              "games_played": 6,
+              "fide_id": 5091756,
+              "rank": 6
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 2.5,
+              "games_played": 6,
+              "fide_id": 8603642,
+              "rank": 7
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 2.5,
+              "games_played": 6,
+              "fide_id": 13708694,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.496,
+              "ci95_low": 0.465,
+              "ci95_high": 0.527
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.149,
+              "ci95_low": 0.1269,
+              "ci95_high": 0.1711
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.117,
+              "ci95_low": 0.0971,
+              "ci95_high": 0.1369
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.095,
+              "ci95_low": 0.0768,
+              "ci95_high": 0.1132
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.072,
+              "ci95_low": 0.056,
+              "ci95_high": 0.088
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.043,
+              "ci95_low": 0.0304,
+              "ci95_high": 0.0556
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.016,
+              "ci95_low": 0.0082,
+              "ci95_high": 0.0238
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.012,
+              "ci95_low": 0.0053,
+              "ci95_high": 0.0187
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "standings": [
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 4.5,
+              "games_played": 7,
+              "fide_id": 14111330,
+              "rank": 1
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 4.0,
+              "games_played": 7,
+              "fide_id": 5091756,
+              "rank": 2
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 3.5,
+              "games_played": 7,
+              "fide_id": 4147103,
+              "rank": 3
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 3.5,
+              "games_played": 7,
+              "fide_id": 35006916,
+              "rank": 4
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 3.5,
+              "games_played": 7,
+              "fide_id": 14109336,
+              "rank": 5
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 3.5,
+              "games_played": 7,
+              "fide_id": 8608059,
+              "rank": 6
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 3.0,
+              "games_played": 7,
+              "fide_id": 13708694,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 2.5,
+              "games_played": 7,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.457,
+              "ci95_low": 0.4261,
+              "ci95_high": 0.4879
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.194,
+              "ci95_low": 0.1695,
+              "ci95_high": 0.2185
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.102,
+              "ci95_low": 0.0832,
+              "ci95_high": 0.1208
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.085,
+              "ci95_low": 0.0677,
+              "ci95_high": 0.1023
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.067,
+              "ci95_low": 0.0515,
+              "ci95_high": 0.0825
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.058,
+              "ci95_low": 0.0435,
+              "ci95_high": 0.0725
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.033,
+              "ci95_low": 0.0219,
+              "ci95_high": 0.0441
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.004,
+              "ci95_low": 0.0001,
+              "ci95_high": 0.0079
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "standings": [
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 4.5,
+              "games_played": 8,
+              "fide_id": 35006916,
+              "rank": 1
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 4.5,
+              "games_played": 8,
+              "fide_id": 14109336,
+              "rank": 2
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 4.5,
+              "games_played": 8,
+              "fide_id": 8608059,
+              "rank": 3
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 4.5,
+              "games_played": 8,
+              "fide_id": 5091756,
+              "rank": 4
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 4.5,
+              "games_played": 8,
+              "fide_id": 14111330,
+              "rank": 5
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 3.5,
+              "games_played": 8,
+              "fide_id": 4147103,
+              "rank": 6
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 3.5,
+              "games_played": 8,
+              "fide_id": 13708694,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 2.5,
+              "games_played": 8,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.282,
+              "ci95_low": 0.2541,
+              "ci95_high": 0.3099
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.242,
+              "ci95_low": 0.2155,
+              "ci95_high": 0.2685
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.171,
+              "ci95_low": 0.1477,
+              "ci95_high": 0.1943
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.14,
+              "ci95_low": 0.1185,
+              "ci95_high": 0.1615
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.125,
+              "ci95_low": 0.1045,
+              "ci95_high": 0.1455
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.02,
+              "ci95_low": 0.0113,
+              "ci95_high": 0.0287
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.02,
+              "ci95_low": 0.0113,
+              "ci95_high": 0.0287
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "standings": [
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 5.5,
+              "games_played": 9,
+              "fide_id": 8608059,
+              "rank": 1
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 5.5,
+              "games_played": 9,
+              "fide_id": 5091756,
+              "rank": 2
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 5.0,
+              "games_played": 9,
+              "fide_id": 14111330,
+              "rank": 3
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 4.5,
+              "games_played": 9,
+              "fide_id": 35006916,
+              "rank": 4
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 4.5,
+              "games_played": 9,
+              "fide_id": 14109336,
+              "rank": 5
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 4.0,
+              "games_played": 9,
+              "fide_id": 4147103,
+              "rank": 6
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 4.0,
+              "games_played": 9,
+              "fide_id": 13708694,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 3.0,
+              "games_played": 9,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.357,
+              "ci95_low": 0.3273,
+              "ci95_high": 0.3867
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.338,
+              "ci95_low": 0.3087,
+              "ci95_high": 0.3673
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.176,
+              "ci95_low": 0.1524,
+              "ci95_high": 0.1996
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.056,
+              "ci95_low": 0.0417,
+              "ci95_high": 0.0703
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.053,
+              "ci95_low": 0.0391,
+              "ci95_high": 0.0669
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.011,
+              "ci95_low": 0.0045,
+              "ci95_high": 0.0175
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.009,
+              "ci95_low": 0.0031,
+              "ci95_high": 0.0149
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 10,
+          "standings": [
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 6.0,
+              "games_played": 10,
+              "fide_id": 5091756,
+              "rank": 1
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 5.5,
+              "games_played": 10,
+              "fide_id": 8608059,
+              "rank": 2
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 5.5,
+              "games_played": 10,
+              "fide_id": 14111330,
+              "rank": 3
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 5.0,
+              "games_played": 10,
+              "fide_id": 4147103,
+              "rank": 4
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 5.0,
+              "games_played": 10,
+              "fide_id": 14109336,
+              "rank": 5
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 5.0,
+              "games_played": 10,
+              "fide_id": 13708694,
+              "rank": 6
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 4.5,
+              "games_played": 10,
+              "fide_id": 35006916,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 3.5,
+              "games_played": 10,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.521,
+              "ci95_low": 0.49,
+              "ci95_high": 0.552
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.18,
+              "ci95_low": 0.1562,
+              "ci95_high": 0.2038
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.153,
+              "ci95_low": 0.1307,
+              "ci95_high": 0.1753
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.068,
+              "ci95_low": 0.0524,
+              "ci95_high": 0.0836
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.036,
+              "ci95_low": 0.0245,
+              "ci95_high": 0.0475
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.034,
+              "ci95_low": 0.0228,
+              "ci95_high": 0.0452
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.008,
+              "ci95_low": 0.0025,
+              "ci95_high": 0.0135
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 11,
+          "standings": [
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 7.0,
+              "games_played": 11,
+              "fide_id": 5091756,
+              "rank": 1
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 6.0,
+              "games_played": 11,
+              "fide_id": 8608059,
+              "rank": 2
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 6.0,
+              "games_played": 11,
+              "fide_id": 14111330,
+              "rank": 3
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 5.5,
+              "games_played": 11,
+              "fide_id": 14109336,
+              "rank": 4
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 5.5,
+              "games_played": 11,
+              "fide_id": 13708694,
+              "rank": 5
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 5.0,
+              "games_played": 11,
+              "fide_id": 4147103,
+              "rank": 6
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 5.0,
+              "games_played": 11,
+              "fide_id": 35006916,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 4.0,
+              "games_played": 11,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.769,
+              "ci95_low": 0.7429,
+              "ci95_high": 0.7951
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.133,
+              "ci95_low": 0.112,
+              "ci95_high": 0.154
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.05,
+              "ci95_low": 0.0365,
+              "ci95_high": 0.0635
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.031,
+              "ci95_low": 0.0203,
+              "ci95_high": 0.0417
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.017,
+              "ci95_low": 0.009,
+              "ci95_high": 0.025
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 12,
+          "standings": [
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 7.0,
+              "games_played": 12,
+              "fide_id": 8608059,
+              "rank": 1
+            },
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 7.0,
+              "games_played": 12,
+              "fide_id": 5091756,
+              "rank": 2
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 6.5,
+              "games_played": 12,
+              "fide_id": 14111330,
+              "rank": 3
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 6.5,
+              "games_played": 12,
+              "fide_id": 13708694,
+              "rank": 4
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 5.5,
+              "games_played": 12,
+              "fide_id": 4147103,
+              "rank": 5
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 5.5,
+              "games_played": 12,
+              "fide_id": 14109336,
+              "rank": 6
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 5.0,
+              "games_played": 12,
+              "fide_id": 35006916,
+              "rank": 7
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 5.0,
+              "games_played": 12,
+              "fide_id": 8603642,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.482,
+              "ci95_low": 0.451,
+              "ci95_high": 0.513
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.191,
+              "ci95_low": 0.1666,
+              "ci95_high": 0.2154
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.171,
+              "ci95_low": 0.1477,
+              "ci95_high": 0.1943
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.152,
+              "ci95_low": 0.1297,
+              "ci95_high": 0.1743
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.003,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0064
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.001,
+              "ci95_low": 0.0,
+              "ci95_high": 0.003
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        },
+        {
+          "round": 13,
+          "standings": [
+            {
+              "player": "Vaishali Rameshbabu",
+              "country": "IND",
+              "elo": 2522,
+              "points": 7.5,
+              "games_played": 13,
+              "fide_id": 5091756,
+              "rank": 1
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "country": "KAZ",
+              "elo": 2478,
+              "points": 7.5,
+              "games_played": 13,
+              "fide_id": 13708694,
+              "rank": 2
+            },
+            {
+              "player": "Zhu Jiner",
+              "country": "CHN",
+              "elo": 2528,
+              "points": 7.0,
+              "games_played": 13,
+              "fide_id": 8608059,
+              "rank": 3
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "country": "FID",
+              "elo": 2560,
+              "points": 6.5,
+              "games_played": 13,
+              "fide_id": 4147103,
+              "rank": 4
+            },
+            {
+              "player": "Kateryna Lagno",
+              "country": "FID",
+              "elo": 2530,
+              "points": 6.5,
+              "games_played": 13,
+              "fide_id": 14109336,
+              "rank": 5
+            },
+            {
+              "player": "Anna Muzychuk",
+              "country": "UKR",
+              "elo": 2518,
+              "points": 6.5,
+              "games_played": 13,
+              "fide_id": 14111330,
+              "rank": 6
+            },
+            {
+              "player": "Tan Zhongyi",
+              "country": "CHN",
+              "elo": 2510,
+              "points": 5.5,
+              "games_played": 13,
+              "fide_id": 8603642,
+              "rank": 7
+            },
+            {
+              "player": "Divya Deshmukh",
+              "country": "IND",
+              "elo": 2548,
+              "points": 5.0,
+              "games_played": 13,
+              "fide_id": 35006916,
+              "rank": 8
+            }
+          ],
+          "title_odds": [
+            {
+              "player": "Vaishali Rameshbabu",
+              "fide_id": 5091756,
+              "p_win": 0.624,
+              "ci95_low": 0.594,
+              "ci95_high": 0.654
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.323,
+              "ci95_low": 0.294,
+              "ci95_high": 0.352
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.024,
+              "ci95_low": 0.0145,
+              "ci95_high": 0.0335
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.014,
+              "ci95_low": 0.0067,
+              "ci95_high": 0.0213
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.008,
+              "ci95_low": 0.0025,
+              "ci95_high": 0.0135
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.007,
+              "ci95_low": 0.0018,
+              "ci95_high": 0.0122
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            }
+          ]
+        }
+      ],
+      "performance": {
+        "by_round": [
+          {
+            "round": 1,
+            "top_pick": "Kateryna Lagno",
+            "top_pick_prob": 0.221,
+            "winner_prob": 0.062,
+            "hit": false
+          },
+          {
+            "round": 2,
+            "top_pick": "Aleksandra Goryachkina",
+            "top_pick_prob": 0.189,
+            "winner_prob": 0.129,
+            "hit": false
+          },
+          {
+            "round": 3,
+            "top_pick": "Kateryna Lagno",
+            "top_pick_prob": 0.253,
+            "winner_prob": 0.102,
+            "hit": false
+          },
+          {
+            "round": 4,
+            "top_pick": "Kateryna Lagno",
+            "top_pick_prob": 0.219,
+            "winner_prob": 0.098,
+            "hit": false
+          },
+          {
+            "round": 5,
+            "top_pick": "Anna Muzychuk",
+            "top_pick_prob": 0.315,
+            "winner_prob": 0.021,
+            "hit": false
+          },
+          {
+            "round": 6,
+            "top_pick": "Anna Muzychuk",
+            "top_pick_prob": 0.496,
+            "winner_prob": 0.149,
+            "hit": false
+          },
+          {
+            "round": 7,
+            "top_pick": "Anna Muzychuk",
+            "top_pick_prob": 0.457,
+            "winner_prob": 0.194,
+            "hit": false
+          },
+          {
+            "round": 8,
+            "top_pick": "Vaishali Rameshbabu",
+            "top_pick_prob": 0.282,
+            "winner_prob": 0.282,
+            "hit": true
+          },
+          {
+            "round": 9,
+            "top_pick": "Anna Muzychuk",
+            "top_pick_prob": 0.357,
+            "winner_prob": 0.338,
+            "hit": false
+          },
+          {
+            "round": 10,
+            "top_pick": "Vaishali Rameshbabu",
+            "top_pick_prob": 0.521,
+            "winner_prob": 0.521,
+            "hit": true
+          },
+          {
+            "round": 11,
+            "top_pick": "Vaishali Rameshbabu",
+            "top_pick_prob": 0.769,
+            "winner_prob": 0.769,
+            "hit": true
+          },
+          {
+            "round": 12,
+            "top_pick": "Vaishali Rameshbabu",
+            "top_pick_prob": 0.482,
+            "winner_prob": 0.482,
+            "hit": true
+          },
+          {
+            "round": 13,
+            "top_pick": "Vaishali Rameshbabu",
+            "top_pick_prob": 0.624,
+            "winner_prob": 0.624,
+            "hit": true
+          }
+        ],
+        "converged_from_round": 10,
+        "mean_winner_prob": 0.2901
+      }
+    }
+  ]
+}
