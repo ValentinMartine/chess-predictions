@@ -17,9 +17,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
 
 warnings.filterwarnings("ignore")
 np.seterr(all="ignore")
+
+K_ELO = 10
 
 from chess_src.models.lgbm_model import ChessLGBMModel
 from chess_src.features.pipeline import ChessFeaturePipeline
@@ -118,6 +121,55 @@ def title_odds_at(model, pipeline, config, all_matches, cutoff: int) -> list:
     return odds
 
 
+def build_games_and_players(config, model, df_proc):
+    """Prédictions du modèle par partie, parties par ronde, journal et gain Elo par joueur."""
+    id_to_name = {p["fide_id"]: p["name"] for p in config["players"]}
+    start_elo = {p["fide_id"]: float(p.get("rating_april_2026", 2700)) for p in config["players"]}
+
+    played = df_proc[df_proc["result"].notna()].copy()
+    played["round"] = pd.to_numeric(played["round"], errors="coerce").astype(int)
+    played = played.sort_values(["round", "white_id"]).reset_index(drop=True)
+    probs = np.asarray(model.predict_proba(played[list(model.feature_cols)]), dtype=float)  # [P(N), P(nulle), P(B)]
+
+    games_by_round = {}
+    player_games = {pid: [] for pid in start_elo}
+    running = dict(start_elo)
+
+    for i in range(len(played)):
+        row = played.iloc[i]
+        w, b = int(row["white_id"]), int(row["black_id"])
+        rnd, res = int(row["round"]), float(row["result"])
+        pb, pn, pw = float(probs[i][0]), float(probs[i][1]), float(probs[i][2])
+        games_by_round.setdefault(rnd, []).append({
+            "round": rnd,
+            "white": id_to_name.get(w, str(w)), "black": id_to_name.get(b, str(b)),
+            "result": res,
+            "p_white": round(pw, 3), "p_draw": round(pn, 3), "p_black": round(pb, 3),
+        })
+        if w in player_games:
+            player_games[w].append({"round": rnd, "opponent": id_to_name.get(b, str(b)), "color": "W", "score": res})
+        if b in player_games:
+            player_games[b].append({"round": rnd, "opponent": id_to_name.get(w, str(w)), "color": "B", "score": 1.0 - res})
+        if w in running and b in running:
+            ew = 1.0 / (1.0 + 10 ** ((running[b] - running[w]) / 400.0))
+            dw = K_ELO * (res - ew)
+            running[w] += dw
+            running[b] -= dw
+
+    players_out = []
+    for p in config["players"]:
+        pid = p["fide_id"]
+        players_out.append({
+            "player": p["name"], "fide_id": pid, "country": p.get("country"),
+            "elo_start": int(round(start_elo[pid])),
+            "elo_gain": round(running[pid] - start_elo[pid], 1),
+            "games": sorted(player_games[pid], key=lambda x: x["round"]),
+        })
+
+    rounds_games = [{"round": r, "games": games_by_round[r]} for r in sorted(games_by_round)]
+    return rounds_games, players_out
+
+
 def build_tournament(t: dict) -> dict:
     config = load_config(str(t["config"]))
     model = load_model(t["model"])
@@ -158,6 +210,8 @@ def build_tournament(t: dict) -> dict:
             converged_from = None
 
     meta = next((v for k, v in config.items() if k.startswith("candidates")), {}) or {}
+    df_proc_full = pipeline.process(all_matches)
+    rounds_games, players_out = build_games_and_players(config, model, df_proc_full)
     return {
         "id": t["id"],
         "name": t["name"],
@@ -169,6 +223,8 @@ def build_tournament(t: dict) -> dict:
         "n_simulations": N_SIMULATIONS,
         "actual_winner": actual_winner,
         "final_standings": final_standings,
+        "players": players_out,
+        "rounds_games": rounds_games,
         "rounds": rounds,
         "performance": {
             "by_round": performance,
