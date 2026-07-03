@@ -50,7 +50,6 @@ chess_src/            Cœur du projet (package Python)
 config/               Joueurs et hyperparamètres (open / féminin)
 scripts/              Entraînement, import, backtest
   dev/                Utilitaires de débogage
-dashboard/            Interface Streamlit
 data/                 Bases SQLite, modèles entraînés, prédictions
 ```
 
@@ -65,10 +64,9 @@ python scripts/train_women.py
 
 # Génération des prédictions ronde par ronde -> data/predictions.json
 python -m chess_src.export
-
-# Dashboard interactif
-streamlit run dashboard/app.py
 ```
+
+Les prédictions sont visualisées sur la page de démo : <https://valentinmartine.com/projets/echecs>
 
 ## Limites
 

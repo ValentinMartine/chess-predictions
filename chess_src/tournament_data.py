@@ -1,7 +1,6 @@
-"""Accès aux données de tournoi (SQLite) partagé par le dashboard et l'export.
+"""Accès aux données de tournoi (SQLite) utilisé par le module d'export.
 
-Regroupe les requêtes de lecture des parties jouées et à venir afin d'éviter
-toute duplication entre l'interface Streamlit et le module d'export.
+Regroupe les requêtes de lecture des parties jouées et à venir.
 """
 
 import sqlite3
