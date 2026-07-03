@@ -4,7 +4,7 @@ Modèle de prédiction du **Tournoi des Candidats FIDE 2026** (sections open et 
 combinant un classifieur **LightGBM** calibré et une **simulation Monte-Carlo** pour estimer,
 ronde après ronde, la probabilité de titre de chaque joueur.
 
-**Démo en ligne :** https://valentinmartine.com/projets/echecs
+**Démo en ligne :** <https://valentinmartine.com/projets/echecs>
 
 ## Objectif
 
@@ -40,7 +40,7 @@ disputée, l'est plus tardivement — un profil attendu pour ce type de modèle.
 
 ## Structure
 
-```
+```text
 chess_src/            Cœur du projet (package Python)
   features/           Construction des variables
   models/             Modèle LightGBM
@@ -72,8 +72,10 @@ streamlit run dashboard/app.py
 
 ## Limites
 
-Le corpus d'entraînement est restreint (~70 parties) : les performances sont exploratoires et
-la calibration reste perfectible. Voir les axes d'amélioration sur la page de démo.
+Le corpus d'entraînement est très déséquilibré selon la section : environ 11 800 parties d'élite
+pour l'open, mais seulement environ 400 pour la section féminine, dont les prédictions sont donc
+nettement plus fragiles. Les performances restent exploratoires et la calibration perfectible.
+Voir les axes d'amélioration sur la page de démo.
 
 ## Licence
 
