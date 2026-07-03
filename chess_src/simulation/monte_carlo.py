@@ -1,14 +1,22 @@
-import math
+"""Simulation Monte-Carlo vectorisée du tournoi.
+
+Toutes les simulations sont menées en parallèle avec numpy : à chaque ronde, les
+probabilités des parties de toutes les simulations sont prédites en un seul appel
+au modèle, puis les issues sont tirées et l'état mis à jour de façon vectorisée.
+Le modèle n'exploitant que les features dynamiques points/écart au leader/last2,
+seules celles-ci sont recalculées par simulation.
+"""
+
 import numpy as np
 import pandas as pd
+
 from chess_src.models.lgbm_model import ChessLGBMModel
 from chess_src.features.pipeline import ChessFeaturePipeline
-from chess_src.features.context import intra_tpr
 
 TOTAL_ROUNDS = 14
 
-# Context features recomputed dynamically per simulation round
-DYNAMIC_CONTEXT_COLS = {
+# Features dynamiques recalculées par simulation (celles réellement utilisées par le modèle).
+DYNAMIC_COLS = [
     "white_tournament_points",
     "black_tournament_points",
     "tournament_points_diff",
@@ -16,12 +24,7 @@ DYNAMIC_CONTEXT_COLS = {
     "black_gap_to_leader",
     "white_last2_score",
     "black_last2_score",
-    "white_last3_score",
-    "black_last3_score",
-    "white_intra_tpr",
-    "black_intra_tpr",
-    "intra_tpr_diff",
-}
+]
 
 
 class CandidatesSimulator:
@@ -36,37 +39,14 @@ class CandidatesSimulator:
         self.pipeline = pipeline
         self.players = players_config
         self.num_simulations = num_simulations
-        self.elo_map = {
-            p["fide_id"]: float(p.get("rating_april_2026", 2500))
-            for p in players_config
-        }
 
-    def simulate(
-        self, current_matches: pd.DataFrame, remaining_matches: pd.DataFrame
-    ) -> dict:
+    def simulate(self, current_matches: pd.DataFrame, remaining_matches: pd.DataFrame) -> dict:
         p_ids = [p["fide_id"] for p in self.players]
-        win_counts = {pid: 0 for pid in p_ids}
+        n_p = len(p_ids)
+        idx = {pid: i for i, pid in enumerate(p_ids)}
+        N = self.num_simulations
 
-        # ── Build history from completed matches ───────────────────────────
-        history_points = {pid: 0.0 for pid in p_ids}
-        history_intra = {pid: [] for pid in p_ids}  # [(score, opp_elo)]
-        history_rounds = {pid: [] for pid in p_ids}  # [(round_num, score)]
-
-        for _, r in current_matches.iterrows():
-            w_id = int(r["white_id"])
-            b_id = int(r["black_id"])
-            res = float(r["result"])
-            rnd = float(r.get("round", 1))
-            w_elo = self.elo_map.get(w_id, 2700.0)
-            b_elo = self.elo_map.get(b_id, 2700.0)
-            history_points[w_id] = history_points.get(w_id, 0.0) + res
-            history_points[b_id] = history_points.get(b_id, 0.0) + (1.0 - res)
-            history_intra[w_id].append((res, b_elo))
-            history_intra[b_id].append((1.0 - res, w_elo))
-            history_rounds[w_id].append((rnd, res))
-            history_rounds[b_id].append((rnd, 1.0 - res))
-
-        # ── Compute static features once ───────────────────────────────────
+        # ── Features statiques calculées une seule fois ────────────────────
         full_df = pd.concat([current_matches, remaining_matches], ignore_index=True)
         full_df["white_id"] = full_df["white_id"].astype(int)
         full_df["black_id"] = full_df["black_id"].astype(int)
@@ -74,79 +54,89 @@ class CandidatesSimulator:
         df_proc = self.pipeline.process(full_df)
 
         rem_df = df_proc[df_proc["result"].isna()].copy()
+        rem_df["round"] = pd.to_numeric(rem_df["round"], errors="coerce").astype(int)
         rem_df = rem_df.sort_values(["round", "white_id"]).reset_index(drop=True)
 
+        total_rounds = int(pd.to_numeric(full_df["round"], errors="coerce").max())
+
+        # ── État initial issu des parties déjà jouées ──────────────────────
+        points0 = np.zeros(n_p)
+        sbr0 = np.zeros((n_p, total_rounds + 2))  # score par [joueur, ronde]
+        for _, r in current_matches.iterrows():
+            w, b = int(r["white_id"]), int(r["black_id"])
+            if w not in idx or b not in idx:
+                continue
+            res = float(r["result"])
+            rnd = int(pd.to_numeric(r.get("round", 1)))
+            points0[idx[w]] += res
+            points0[idx[b]] += 1.0 - res
+            sbr0[idx[w], rnd] = res
+            sbr0[idx[b], rnd] = 1.0 - res
+
         if rem_df.empty:
-            winner_id = max(history_points, key=history_points.get)
-            return {pid: (1.0 if pid == winner_id else 0.0) for pid in p_ids}
+            winner = int(np.argmax(points0))
+            return {pid: (1.0 if i == winner else 0.0) for pid, i in idx.items()}
 
-        rounds_grouped = [
-            (rnd, grp.reset_index(drop=True)) for rnd, grp in rem_df.groupby("round")
-        ]
-        outcomes = [0.0, 0.5, 1.0]
+        points = np.tile(points0, (N, 1))                 # (N, n_p)
+        sbr = np.tile(sbr0, (N, 1, 1))                     # (N, n_p, R+2)
 
-        for _ in range(self.num_simulations):
-            sim_scores = history_points.copy()
-            sim_intra = {pid: list(history_intra[pid]) for pid in p_ids}
-            sim_rounds = {pid: list(history_rounds[pid]) for pid in p_ids}
+        feature_cols = list(self.model.feature_cols)
+        F = len(feature_cols)
+        col_pos = {name: (feature_cols.index(name) if name in feature_cols else None) for name in DYNAMIC_COLS}
 
-            for rnd, rnd_matches in rounds_grouped:
-                batch = rnd_matches[self.model.feature_cols].copy()
+        rounds_grouped = [(int(rnd), grp.reset_index(drop=True)) for rnd, grp in rem_df.groupby("round")]
+        rng = np.random.default_rng()
 
-                # ── Override dynamic context features ──────────────────────
-                w_ids = rnd_matches["white_id"].values
-                b_ids = rnd_matches["black_id"].values
+        for rnd, gm in rounds_grouped:
+            g = len(gm)
+            w_idx = np.array([idx[int(x)] for x in gm["white_id"]])
+            b_idx = np.array([idx[int(x)] for x in gm["black_id"]])
 
-                w_pts = np.array([sim_scores.get(int(i), 0.0) for i in w_ids])
-                b_pts = np.array([sim_scores.get(int(i), 0.0) for i in b_ids])
-                leader = max(sim_scores.values()) if sim_scores else 0.0
+            base = gm[feature_cols].to_numpy(dtype=float)             # (g, F)
+            feat = np.broadcast_to(base, (N, g, F)).copy()            # (N, g, F)
 
-                batch["white_tournament_points"] = w_pts
-                batch["black_tournament_points"] = b_pts
-                batch["tournament_points_diff"] = w_pts - b_pts
-                batch["white_gap_to_leader"] = leader - w_pts
-                batch["black_gap_to_leader"] = leader - b_pts
+            w_pts = points[:, w_idx]                                  # (N, g)
+            b_pts = points[:, b_idx]
+            leader = points.max(axis=1, keepdims=True)                # (N, 1)
 
-                def last_n(pid, n):
-                    h = sorted(sim_rounds.get(int(pid), []), key=lambda x: x[0])
-                    return sum(s for _, s in h[-n:])
+            r1 = sbr[:, :, rnd - 1] if rnd - 1 >= 1 else np.zeros((N, n_p))
+            r2 = sbr[:, :, rnd - 2] if rnd - 2 >= 1 else np.zeros((N, n_p))
+            last2 = r1 + r2                                           # (N, n_p)
 
-                batch["white_last2_score"] = [last_n(i, 2) for i in w_ids]
-                batch["black_last2_score"] = [last_n(i, 2) for i in b_ids]
-                batch["white_last3_score"] = [last_n(i, 3) for i in w_ids]
-                batch["black_last3_score"] = [last_n(i, 3) for i in b_ids]
+            vals = {
+                "white_tournament_points": w_pts,
+                "black_tournament_points": b_pts,
+                "tournament_points_diff": w_pts - b_pts,
+                "white_gap_to_leader": leader - w_pts,
+                "black_gap_to_leader": leader - b_pts,
+                "white_last2_score": last2[:, w_idx],
+                "black_last2_score": last2[:, b_idx],
+            }
+            for name, v in vals.items():
+                j = col_pos[name]
+                if j is not None:
+                    feat[:, :, j] = v
 
-                w_itprs = np.array([
-                    intra_tpr(sim_intra.get(int(i), []), self.elo_map.get(int(i), 2700.0))
-                    for i in w_ids
-                ])
-                b_itprs = np.array([
-                    intra_tpr(sim_intra.get(int(i), []), self.elo_map.get(int(i), 2700.0))
-                    for i in b_ids
-                ])
-                batch["white_intra_tpr"] = w_itprs
-                batch["black_intra_tpr"] = b_itprs
-                batch["intra_tpr_diff"] = w_itprs - b_itprs
+            X = pd.DataFrame(feat.reshape(N * g, F), columns=feature_cols)
+            probs = np.asarray(self.model.predict_proba(X), dtype=np.float64).reshape(N, g, 3)
+            probs /= probs.sum(axis=2, keepdims=True)
 
-                probs_batch = self.model.predict_proba(batch)
+            cum = np.cumsum(probs, axis=2)
+            u = rng.random((N, g, 1))
+            outcome = (u > cum).sum(axis=2)      # 0=Noirs, 1=Nulle, 2=Blancs
+            res = outcome * 0.5                   # score des Blancs : 0.0 / 0.5 / 1.0
 
-                for i, row in rnd_matches.iterrows():
-                    p = np.array(probs_batch[i], dtype=np.float64)
-                    p /= p.sum()
-                    res = float(np.random.choice(outcomes, p=p))
-                    w_id = int(row["white_id"])
-                    b_id = int(row["black_id"])
-                    w_elo = self.elo_map.get(w_id, 2700.0)
-                    b_elo = self.elo_map.get(b_id, 2700.0)
-                    sim_scores[w_id] = sim_scores.get(w_id, 0.0) + res
-                    sim_scores[b_id] = sim_scores.get(b_id, 0.0) + (1.0 - res)
-                    sim_rounds.setdefault(w_id, []).append((rnd, res))
-                    sim_rounds.setdefault(b_id, []).append((rnd, 1.0 - res))
-                    sim_intra.setdefault(w_id, []).append((res, b_elo))
-                    sim_intra.setdefault(b_id, []).append((1.0 - res, w_elo))
+            points[:, w_idx] += res
+            points[:, b_idx] += 1.0 - res
+            sbr[:, w_idx, rnd] = res
+            sbr[:, b_idx, rnd] = 1.0 - res
 
-            max_s = max(sim_scores[pid] for pid in p_ids)
-            winners = [pid for pid in p_ids if sim_scores[pid] == max_s]
-            win_counts[np.random.choice(winners)] += 1
+        # ── Vainqueur de chaque simulation (départage aléatoire) ───────────
+        max_pts = points.max(axis=1, keepdims=True)
+        is_max = points >= max_pts - 1e-9
+        tie = rng.random((N, n_p))
+        tie[~is_max] = -1.0
+        winner_idx = tie.argmax(axis=1)
+        counts = np.bincount(winner_idx, minlength=n_p)
 
-        return {pid: win_counts[pid] / self.num_simulations for pid in p_ids}
+        return {pid: float(counts[i]) / N for pid, i in idx.items()}
