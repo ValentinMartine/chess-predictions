@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T11:55:01+00:00",
+  "generated_at": "2026-09-24T12:02:03+00:00",
   "source": "chess_candidates_2026_predictions",
   "method": "LightGBM multiclasse calibré + simulation Monte-Carlo (1000 tirages)",
   "tournaments": [
@@ -1490,58 +1490,58 @@
             {
               "player": "Fabiano Caruana",
               "fide_id": 2020009,
-              "p_win": 0.574,
-              "ci95_low": 0.5434,
-              "ci95_high": 0.6046
+              "p_win": 0.565,
+              "ci95_low": 0.5343,
+              "ci95_high": 0.5957
             },
             {
               "player": "R. Praggnanandhaa",
               "fide_id": 25059650,
-              "p_win": 0.191,
-              "ci95_low": 0.1666,
-              "ci95_high": 0.2154
+              "p_win": 0.186,
+              "ci95_low": 0.1619,
+              "ci95_high": 0.2101
             },
             {
               "player": "Javokhir Sindarov",
               "fide_id": 14205481,
-              "p_win": 0.18,
-              "ci95_low": 0.1562,
-              "ci95_high": 0.2038
+              "p_win": 0.183,
+              "ci95_low": 0.159,
+              "ci95_high": 0.207
             },
             {
               "player": "Hikaru Nakamura",
               "fide_id": 2004887,
-              "p_win": 0.042,
-              "ci95_low": 0.0296,
-              "ci95_high": 0.0544
+              "p_win": 0.046,
+              "ci95_low": 0.033,
+              "ci95_high": 0.059
             },
             {
               "player": "Wei Yi",
               "fide_id": 8603405,
-              "p_win": 0.007,
-              "ci95_low": 0.0018,
-              "ci95_high": 0.0122
+              "p_win": 0.008,
+              "ci95_low": 0.0025,
+              "ci95_high": 0.0135
             },
             {
               "player": "Matthias Bluebaum",
               "fide_id": 4661654,
-              "p_win": 0.006,
-              "ci95_low": 0.0012,
-              "ci95_high": 0.0108
+              "p_win": 0.008,
+              "ci95_low": 0.0025,
+              "ci95_high": 0.0135
             },
             {
               "player": "Anish Giri",
               "fide_id": 24116068,
-              "p_win": 0.0,
+              "p_win": 0.002,
               "ci95_low": 0.0,
-              "ci95_high": 0.0
+              "ci95_high": 0.0048
             },
             {
               "player": "Andrey Esipenko",
               "fide_id": 24175439,
-              "p_win": 0.0,
+              "p_win": 0.002,
               "ci95_low": 0.0,
-              "ci95_high": 0.0
+              "ci95_high": 0.0048
             }
           ]
         },
@@ -1625,58 +1625,58 @@
             {
               "player": "Fabiano Caruana",
               "fide_id": 2020009,
-              "p_win": 0.385,
-              "ci95_low": 0.3548,
-              "ci95_high": 0.4152
+              "p_win": 0.417,
+              "ci95_low": 0.3864,
+              "ci95_high": 0.4476
             },
             {
               "player": "Javokhir Sindarov",
               "fide_id": 14205481,
-              "p_win": 0.24,
-              "ci95_low": 0.2135,
-              "ci95_high": 0.2665
+              "p_win": 0.246,
+              "ci95_low": 0.2193,
+              "ci95_high": 0.2727
             },
             {
               "player": "R. Praggnanandhaa",
               "fide_id": 25059650,
-              "p_win": 0.183,
-              "ci95_low": 0.159,
-              "ci95_high": 0.207
+              "p_win": 0.155,
+              "ci95_low": 0.1326,
+              "ci95_high": 0.1774
             },
             {
               "player": "Hikaru Nakamura",
               "fide_id": 2004887,
-              "p_win": 0.117,
-              "ci95_low": 0.0971,
-              "ci95_high": 0.1369
+              "p_win": 0.093,
+              "ci95_low": 0.075,
+              "ci95_high": 0.111
             },
             {
               "player": "Matthias Bluebaum",
               "fide_id": 4661654,
-              "p_win": 0.038,
-              "ci95_low": 0.0261,
-              "ci95_high": 0.0499
+              "p_win": 0.042,
+              "ci95_low": 0.0296,
+              "ci95_high": 0.0544
             },
             {
               "player": "Wei Yi",
               "fide_id": 8603405,
-              "p_win": 0.022,
-              "ci95_low": 0.0129,
-              "ci95_high": 0.0311
+              "p_win": 0.034,
+              "ci95_low": 0.0228,
+              "ci95_high": 0.0452
             },
             {
-              "player": "Andrey Esipenko",
-              "fide_id": 24175439,
+              "player": "Anish Giri",
+              "fide_id": 24116068,
               "p_win": 0.008,
               "ci95_low": 0.0025,
               "ci95_high": 0.0135
             },
             {
-              "player": "Anish Giri",
-              "fide_id": 24116068,
-              "p_win": 0.007,
-              "ci95_low": 0.0018,
-              "ci95_high": 0.0122
+              "player": "Andrey Esipenko",
+              "fide_id": 24175439,
+              "p_win": 0.005,
+              "ci95_low": 0.0006,
+              "ci95_high": 0.0094
             }
           ]
         },
@@ -1760,58 +1760,58 @@
             {
               "player": "Fabiano Caruana",
               "fide_id": 2020009,
-              "p_win": 0.434,
-              "ci95_low": 0.4033,
-              "ci95_high": 0.4647
+              "p_win": 0.418,
+              "ci95_low": 0.3874,
+              "ci95_high": 0.4486
             },
             {
               "player": "Javokhir Sindarov",
               "fide_id": 14205481,
-              "p_win": 0.287,
-              "ci95_low": 0.259,
-              "ci95_high": 0.315
+              "p_win": 0.309,
+              "ci95_low": 0.2804,
+              "ci95_high": 0.3376
             },
             {
               "player": "Wei Yi",
               "fide_id": 8603405,
-              "p_win": 0.166,
-              "ci95_low": 0.1429,
-              "ci95_high": 0.1891
+              "p_win": 0.172,
+              "ci95_low": 0.1486,
+              "ci95_high": 0.1954
             },
             {
               "player": "Matthias Bluebaum",
               "fide_id": 4661654,
-              "p_win": 0.052,
-              "ci95_low": 0.0382,
-              "ci95_high": 0.0658
+              "p_win": 0.047,
+              "ci95_low": 0.0339,
+              "ci95_high": 0.0601
             },
             {
               "player": "Hikaru Nakamura",
               "fide_id": 2004887,
-              "p_win": 0.028,
-              "ci95_low": 0.0178,
-              "ci95_high": 0.0382
+              "p_win": 0.033,
+              "ci95_low": 0.0219,
+              "ci95_high": 0.0441
             },
             {
               "player": "Andrey Esipenko",
               "fide_id": 24175439,
-              "p_win": 0.016,
-              "ci95_low": 0.0082,
-              "ci95_high": 0.0238
-            },
-            {
-              "player": "Anish Giri",
-              "fide_id": 24116068,
               "p_win": 0.013,
               "ci95_low": 0.006,
               "ci95_high": 0.02
             },
             {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.008,
+              "ci95_low": 0.0025,
+              "ci95_high": 0.0135
+            },
+            {
               "player": "R. Praggnanandhaa",
               "fide_id": 25059650,
-              "p_win": 0.004,
-              "ci95_low": 0.0001,
-              "ci95_high": 0.0079
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
             }
           ]
         },
@@ -1895,30 +1895,23 @@
             {
               "player": "Javokhir Sindarov",
               "fide_id": 14205481,
-              "p_win": 0.717,
-              "ci95_low": 0.6891,
-              "ci95_high": 0.7449
+              "p_win": 0.758,
+              "ci95_low": 0.7315,
+              "ci95_high": 0.7845
             },
             {
               "player": "Fabiano Caruana",
               "fide_id": 2020009,
-              "p_win": 0.236,
-              "ci95_low": 0.2097,
-              "ci95_high": 0.2623
+              "p_win": 0.205,
+              "ci95_low": 0.18,
+              "ci95_high": 0.23
             },
             {
               "player": "Anish Giri",
               "fide_id": 24116068,
-              "p_win": 0.035,
-              "ci95_low": 0.0236,
-              "ci95_high": 0.0464
-            },
-            {
-              "player": "Hikaru Nakamura",
-              "fide_id": 2004887,
-              "p_win": 0.005,
-              "ci95_low": 0.0006,
-              "ci95_high": 0.0094
+              "p_win": 0.027,
+              "ci95_low": 0.017,
+              "ci95_high": 0.037
             },
             {
               "player": "Matthias Bluebaum",
@@ -1928,18 +1921,25 @@
               "ci95_high": 0.0094
             },
             {
-              "player": "R. Praggnanandhaa",
-              "fide_id": 25059650,
-              "p_win": 0.002,
+              "player": "Hikaru Nakamura",
+              "fide_id": 2004887,
+              "p_win": 0.003,
               "ci95_low": 0.0,
-              "ci95_high": 0.0048
+              "ci95_high": 0.0064
             },
             {
               "player": "Wei Yi",
               "fide_id": 8603405,
-              "p_win": 0.0,
+              "p_win": 0.001,
               "ci95_low": 0.0,
-              "ci95_high": 0.0
+              "ci95_high": 0.003
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.001,
+              "ci95_low": 0.0,
+              "ci95_high": 0.003
             },
             {
               "player": "Andrey Esipenko",
@@ -2030,51 +2030,44 @@
             {
               "player": "Javokhir Sindarov",
               "fide_id": 14205481,
-              "p_win": 0.722,
-              "ci95_low": 0.6942,
-              "ci95_high": 0.7498
+              "p_win": 0.718,
+              "ci95_low": 0.6901,
+              "ci95_high": 0.7459
             },
             {
               "player": "Fabiano Caruana",
               "fide_id": 2020009,
-              "p_win": 0.202,
-              "ci95_low": 0.1771,
-              "ci95_high": 0.2269
+              "p_win": 0.215,
+              "ci95_low": 0.1895,
+              "ci95_high": 0.2405
             },
             {
               "player": "Wei Yi",
               "fide_id": 8603405,
-              "p_win": 0.032,
-              "ci95_low": 0.0211,
-              "ci95_high": 0.0429
+              "p_win": 0.033,
+              "ci95_low": 0.0219,
+              "ci95_high": 0.0441
             },
             {
               "player": "Anish Giri",
               "fide_id": 24116068,
-              "p_win": 0.029,
-              "ci95_low": 0.0186,
-              "ci95_high": 0.0394
+              "p_win": 0.025,
+              "ci95_low": 0.0153,
+              "ci95_high": 0.0347
             },
             {
               "player": "Matthias Bluebaum",
               "fide_id": 4661654,
-              "p_win": 0.006,
-              "ci95_low": 0.0012,
-              "ci95_high": 0.0108
-            },
-            {
-              "player": "R. Praggnanandhaa",
-              "fide_id": 25059650,
-              "p_win": 0.004,
-              "ci95_low": 0.0001,
-              "ci95_high": 0.0079
+              "p_win": 0.005,
+              "ci95_low": 0.0006,
+              "ci95_high": 0.0094
             },
             {
               "player": "Andrey Esipenko",
               "fide_id": 24175439,
-              "p_win": 0.004,
-              "ci95_low": 0.0001,
-              "ci95_high": 0.0079
+              "p_win": 0.003,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0064
             },
             {
               "player": "Hikaru Nakamura",
@@ -2082,6 +2075,13 @@
               "p_win": 0.001,
               "ci95_low": 0.0,
               "ci95_high": 0.003
+            },
+            {
+              "player": "R. Praggnanandhaa",
+              "fide_id": 25059650,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
             }
           ]
         },
@@ -2165,16 +2165,16 @@
             {
               "player": "Javokhir Sindarov",
               "fide_id": 14205481,
-              "p_win": 0.965,
-              "ci95_low": 0.9536,
-              "ci95_high": 0.9764
+              "p_win": 0.96,
+              "ci95_low": 0.9479,
+              "ci95_high": 0.9721
             },
             {
               "player": "Fabiano Caruana",
               "fide_id": 2020009,
-              "p_win": 0.035,
-              "ci95_low": 0.0236,
-              "ci95_high": 0.0464
+              "p_win": 0.04,
+              "ci95_low": 0.0279,
+              "ci95_high": 0.0521
             },
             {
               "player": "Hikaru Nakamura",
@@ -2300,23 +2300,30 @@
             {
               "player": "Javokhir Sindarov",
               "fide_id": 14205481,
-              "p_win": 0.912,
-              "ci95_low": 0.8944,
-              "ci95_high": 0.9296
+              "p_win": 0.897,
+              "ci95_low": 0.8782,
+              "ci95_high": 0.9158
             },
             {
               "player": "Fabiano Caruana",
               "fide_id": 2020009,
-              "p_win": 0.08,
-              "ci95_low": 0.0632,
-              "ci95_high": 0.0968
+              "p_win": 0.095,
+              "ci95_low": 0.0768,
+              "ci95_high": 0.1132
             },
             {
               "player": "Anish Giri",
               "fide_id": 24116068,
-              "p_win": 0.008,
-              "ci95_low": 0.0025,
-              "ci95_high": 0.0135
+              "p_win": 0.007,
+              "ci95_low": 0.0018,
+              "ci95_high": 0.0122
+            },
+            {
+              "player": "Matthias Bluebaum",
+              "fide_id": 4661654,
+              "p_win": 0.001,
+              "ci95_low": 0.0,
+              "ci95_high": 0.003
             },
             {
               "player": "Hikaru Nakamura",
@@ -2335,13 +2342,6 @@
             {
               "player": "R. Praggnanandhaa",
               "fide_id": 25059650,
-              "p_win": 0.0,
-              "ci95_low": 0.0,
-              "ci95_high": 0.0
-            },
-            {
-              "player": "Matthias Bluebaum",
-              "fide_id": 4661654,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -2435,23 +2435,30 @@
             {
               "player": "Javokhir Sindarov",
               "fide_id": 14205481,
-              "p_win": 0.914,
-              "ci95_low": 0.8966,
-              "ci95_high": 0.9314
+              "p_win": 0.91,
+              "ci95_low": 0.8923,
+              "ci95_high": 0.9277
             },
             {
               "player": "Fabiano Caruana",
               "fide_id": 2020009,
-              "p_win": 0.084,
-              "ci95_low": 0.0668,
-              "ci95_high": 0.1012
+              "p_win": 0.087,
+              "ci95_low": 0.0695,
+              "ci95_high": 0.1045
+            },
+            {
+              "player": "Anish Giri",
+              "fide_id": 24116068,
+              "p_win": 0.002,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0048
             },
             {
               "player": "Matthias Bluebaum",
               "fide_id": 4661654,
-              "p_win": 0.002,
+              "p_win": 0.001,
               "ci95_low": 0.0,
-              "ci95_high": 0.0048
+              "ci95_high": 0.003
             },
             {
               "player": "Hikaru Nakamura",
@@ -2463,13 +2470,6 @@
             {
               "player": "Wei Yi",
               "fide_id": 8603405,
-              "p_win": 0.0,
-              "ci95_low": 0.0,
-              "ci95_high": 0.0
-            },
-            {
-              "player": "Anish Giri",
-              "fide_id": 24116068,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -2577,16 +2577,16 @@
             {
               "player": "Anish Giri",
               "fide_id": 24116068,
-              "p_win": 0.004,
-              "ci95_low": 0.0001,
-              "ci95_high": 0.0079
+              "p_win": 0.005,
+              "ci95_low": 0.0006,
+              "ci95_high": 0.0094
             },
             {
-              "player": "Fabiano Caruana",
-              "fide_id": 2020009,
-              "p_win": 0.002,
+              "player": "Wei Yi",
+              "fide_id": 8603405,
+              "p_win": 0.001,
               "ci95_low": 0.0,
-              "ci95_high": 0.0048
+              "ci95_high": 0.003
             },
             {
               "player": "Hikaru Nakamura",
@@ -2596,8 +2596,8 @@
               "ci95_high": 0.0
             },
             {
-              "player": "Wei Yi",
-              "fide_id": 8603405,
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -2710,8 +2710,8 @@
               "ci95_high": 1.0
             },
             {
-              "player": "Fabiano Caruana",
-              "fide_id": 2020009,
+              "player": "Anish Giri",
+              "fide_id": 24116068,
               "p_win": 0.002,
               "ci95_low": 0.0,
               "ci95_high": 0.0048
@@ -2724,15 +2724,15 @@
               "ci95_high": 0.0
             },
             {
-              "player": "Wei Yi",
-              "fide_id": 8603405,
+              "player": "Fabiano Caruana",
+              "fide_id": 2020009,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
             },
             {
-              "player": "Anish Giri",
-              "fide_id": 24116068,
+              "player": "Wei Yi",
+              "fide_id": 8603405,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -3171,57 +3171,57 @@
           {
             "round": 1,
             "top_pick": "Fabiano Caruana",
-            "top_pick_prob": 0.574,
-            "winner_prob": 0.18,
+            "top_pick_prob": 0.565,
+            "winner_prob": 0.183,
             "hit": false
           },
           {
             "round": 2,
             "top_pick": "Fabiano Caruana",
-            "top_pick_prob": 0.385,
-            "winner_prob": 0.24,
+            "top_pick_prob": 0.417,
+            "winner_prob": 0.246,
             "hit": false
           },
           {
             "round": 3,
             "top_pick": "Fabiano Caruana",
-            "top_pick_prob": 0.434,
-            "winner_prob": 0.287,
+            "top_pick_prob": 0.418,
+            "winner_prob": 0.309,
             "hit": false
           },
           {
             "round": 4,
             "top_pick": "Javokhir Sindarov",
-            "top_pick_prob": 0.717,
-            "winner_prob": 0.717,
+            "top_pick_prob": 0.758,
+            "winner_prob": 0.758,
             "hit": true
           },
           {
             "round": 5,
             "top_pick": "Javokhir Sindarov",
-            "top_pick_prob": 0.722,
-            "winner_prob": 0.722,
+            "top_pick_prob": 0.718,
+            "winner_prob": 0.718,
             "hit": true
           },
           {
             "round": 6,
             "top_pick": "Javokhir Sindarov",
-            "top_pick_prob": 0.965,
-            "winner_prob": 0.965,
+            "top_pick_prob": 0.96,
+            "winner_prob": 0.96,
             "hit": true
           },
           {
             "round": 7,
             "top_pick": "Javokhir Sindarov",
-            "top_pick_prob": 0.912,
-            "winner_prob": 0.912,
+            "top_pick_prob": 0.897,
+            "winner_prob": 0.897,
             "hit": true
           },
           {
             "round": 8,
             "top_pick": "Javokhir Sindarov",
-            "top_pick_prob": 0.914,
-            "winner_prob": 0.914,
+            "top_pick_prob": 0.91,
+            "winner_prob": 0.91,
             "hit": true
           },
           {
@@ -3261,7 +3261,7 @@
           }
         ],
         "converged_from_round": 4,
-        "mean_winner_prob": 0.7638
+        "mean_winner_prob": 0.7672
       }
     },
     {
@@ -4751,58 +4751,58 @@
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.491,
-              "ci95_low": 0.46,
-              "ci95_high": 0.522
+              "p_win": 0.484,
+              "ci95_low": 0.453,
+              "ci95_high": 0.515
             },
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.181,
-              "ci95_low": 0.1571,
-              "ci95_high": 0.2049
+              "p_win": 0.19,
+              "ci95_low": 0.1657,
+              "ci95_high": 0.2143
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.117,
-              "ci95_low": 0.0971,
-              "ci95_high": 0.1369
-            },
-            {
-              "player": "Aleksandra Goryachkina",
-              "fide_id": 4147103,
-              "p_win": 0.09,
-              "ci95_low": 0.0723,
-              "ci95_high": 0.1077
+              "p_win": 0.116,
+              "ci95_low": 0.0962,
+              "ci95_high": 0.1358
             },
             {
               "player": "Tan Zhongyi",
               "fide_id": 8603642,
-              "p_win": 0.081,
-              "ci95_low": 0.0641,
-              "ci95_high": 0.0979
+              "p_win": 0.094,
+              "ci95_low": 0.0759,
+              "ci95_high": 0.1121
+            },
+            {
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
+              "p_win": 0.067,
+              "ci95_low": 0.0515,
+              "ci95_high": 0.0825
             },
             {
               "player": "Bibisara Assaubayeva",
               "fide_id": 13708694,
-              "p_win": 0.028,
-              "ci95_low": 0.0178,
-              "ci95_high": 0.0382
+              "p_win": 0.027,
+              "ci95_low": 0.017,
+              "ci95_high": 0.037
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.007,
-              "ci95_low": 0.0018,
-              "ci95_high": 0.0122
+              "p_win": 0.016,
+              "ci95_low": 0.0082,
+              "ci95_high": 0.0238
             },
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.005,
-              "ci95_low": 0.0006,
-              "ci95_high": 0.0094
+              "p_win": 0.006,
+              "ci95_low": 0.0012,
+              "ci95_high": 0.0108
             }
           ]
         },
@@ -4886,58 +4886,58 @@
             {
               "player": "Aleksandra Goryachkina",
               "fide_id": 4147103,
-              "p_win": 0.483,
-              "ci95_low": 0.452,
-              "ci95_high": 0.514
+              "p_win": 0.449,
+              "ci95_low": 0.4182,
+              "ci95_high": 0.4798
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.144,
-              "ci95_low": 0.1222,
-              "ci95_high": 0.1658
+              "p_win": 0.138,
+              "ci95_low": 0.1166,
+              "ci95_high": 0.1594
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.122,
-              "ci95_low": 0.1017,
-              "ci95_high": 0.1423
+              "p_win": 0.126,
+              "ci95_low": 0.1054,
+              "ci95_high": 0.1466
             },
             {
               "player": "Tan Zhongyi",
               "fide_id": 8603642,
-              "p_win": 0.1,
-              "ci95_low": 0.0814,
-              "ci95_high": 0.1186
+              "p_win": 0.124,
+              "ci95_low": 0.1036,
+              "ci95_high": 0.1444
             },
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.078,
-              "ci95_low": 0.0614,
-              "ci95_high": 0.0946
+              "p_win": 0.098,
+              "ci95_low": 0.0796,
+              "ci95_high": 0.1164
             },
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.042,
-              "ci95_low": 0.0296,
-              "ci95_high": 0.0544
+              "p_win": 0.038,
+              "ci95_low": 0.0261,
+              "ci95_high": 0.0499
             },
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.023,
-              "ci95_low": 0.0137,
-              "ci95_high": 0.0323
+              "p_win": 0.022,
+              "ci95_low": 0.0129,
+              "ci95_high": 0.0311
             },
             {
               "player": "Bibisara Assaubayeva",
               "fide_id": 13708694,
-              "p_win": 0.008,
-              "ci95_low": 0.0025,
-              "ci95_high": 0.0135
+              "p_win": 0.005,
+              "ci95_low": 0.0006,
+              "ci95_high": 0.0094
             }
           ]
         },
@@ -5021,58 +5021,58 @@
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.351,
-              "ci95_low": 0.3214,
-              "ci95_high": 0.3806
+              "p_win": 0.338,
+              "ci95_low": 0.3087,
+              "ci95_high": 0.3673
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.258,
-              "ci95_low": 0.2309,
-              "ci95_high": 0.2851
-            },
-            {
-              "player": "Anna Muzychuk",
-              "fide_id": 14111330,
-              "p_win": 0.134,
-              "ci95_low": 0.1129,
-              "ci95_high": 0.1551
+              "p_win": 0.293,
+              "ci95_low": 0.2648,
+              "ci95_high": 0.3212
             },
             {
               "player": "Aleksandra Goryachkina",
               "fide_id": 4147103,
-              "p_win": 0.13,
-              "ci95_low": 0.1092,
-              "ci95_high": 0.1508
+              "p_win": 0.127,
+              "ci95_low": 0.1064,
+              "ci95_high": 0.1476
+            },
+            {
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
+              "p_win": 0.122,
+              "ci95_low": 0.1017,
+              "ci95_high": 0.1423
             },
             {
               "player": "Bibisara Assaubayeva",
               "fide_id": 13708694,
-              "p_win": 0.108,
-              "ci95_low": 0.0888,
-              "ci95_high": 0.1272
+              "p_win": 0.078,
+              "ci95_low": 0.0614,
+              "ci95_high": 0.0946
             },
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.019,
-              "ci95_low": 0.0105,
-              "ci95_high": 0.0275
+              "p_win": 0.04,
+              "ci95_low": 0.0279,
+              "ci95_high": 0.0521
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.0,
+              "p_win": 0.001,
               "ci95_low": 0.0,
-              "ci95_high": 0.0
+              "ci95_high": 0.003
             },
             {
               "player": "Tan Zhongyi",
               "fide_id": 8603642,
-              "p_win": 0.0,
+              "p_win": 0.001,
               "ci95_low": 0.0,
-              "ci95_high": 0.0
+              "ci95_high": 0.003
             }
           ]
         },
@@ -5156,58 +5156,58 @@
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.357,
-              "ci95_low": 0.3273,
-              "ci95_high": 0.3867
+              "p_win": 0.377,
+              "ci95_low": 0.347,
+              "ci95_high": 0.407
             },
             {
               "player": "Aleksandra Goryachkina",
               "fide_id": 4147103,
-              "p_win": 0.355,
-              "ci95_low": 0.3253,
-              "ci95_high": 0.3847
+              "p_win": 0.362,
+              "ci95_low": 0.3322,
+              "ci95_high": 0.3918
             },
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.112,
-              "ci95_low": 0.0925,
-              "ci95_high": 0.1315
+              "p_win": 0.105,
+              "ci95_low": 0.086,
+              "ci95_high": 0.124
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.089,
-              "ci95_low": 0.0714,
-              "ci95_high": 0.1066
+              "p_win": 0.076,
+              "ci95_low": 0.0596,
+              "ci95_high": 0.0924
             },
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.037,
-              "ci95_low": 0.0253,
-              "ci95_high": 0.0487
+              "p_win": 0.039,
+              "ci95_low": 0.027,
+              "ci95_high": 0.051
             },
             {
               "player": "Bibisara Assaubayeva",
               "fide_id": 13708694,
-              "p_win": 0.032,
-              "ci95_low": 0.0211,
-              "ci95_high": 0.0429
+              "p_win": 0.022,
+              "ci95_low": 0.0129,
+              "ci95_high": 0.0311
             },
             {
               "player": "Tan Zhongyi",
               "fide_id": 8603642,
-              "p_win": 0.017,
-              "ci95_low": 0.009,
-              "ci95_high": 0.025
+              "p_win": 0.016,
+              "ci95_low": 0.0082,
+              "ci95_high": 0.0238
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.001,
+              "p_win": 0.003,
               "ci95_low": 0.0,
-              "ci95_high": 0.003
+              "ci95_high": 0.0064
             }
           ]
         },
@@ -5291,51 +5291,51 @@
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.42,
-              "ci95_low": 0.3894,
-              "ci95_high": 0.4506
+              "p_win": 0.421,
+              "ci95_low": 0.3904,
+              "ci95_high": 0.4516
             },
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.408,
-              "ci95_low": 0.3775,
-              "ci95_high": 0.4385
+              "p_win": 0.4,
+              "ci95_low": 0.3696,
+              "ci95_high": 0.4304
             },
             {
               "player": "Bibisara Assaubayeva",
               "fide_id": 13708694,
-              "p_win": 0.124,
-              "ci95_low": 0.1036,
-              "ci95_high": 0.1444
+              "p_win": 0.14,
+              "ci95_low": 0.1185,
+              "ci95_high": 0.1615
             },
             {
-              "player": "Zhu Jiner",
-              "fide_id": 8608059,
+              "player": "Aleksandra Goryachkina",
+              "fide_id": 4147103,
               "p_win": 0.02,
               "ci95_low": 0.0113,
               "ci95_high": 0.0287
             },
             {
-              "player": "Aleksandra Goryachkina",
-              "fide_id": 4147103,
-              "p_win": 0.019,
-              "ci95_low": 0.0105,
-              "ci95_high": 0.0275
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.015,
+              "ci95_low": 0.0075,
+              "ci95_high": 0.0225
             },
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.007,
-              "ci95_low": 0.0018,
-              "ci95_high": 0.0122
+              "p_win": 0.003,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0064
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.002,
+              "p_win": 0.001,
               "ci95_low": 0.0,
-              "ci95_high": 0.0048
+              "ci95_high": 0.003
             },
             {
               "player": "Tan Zhongyi",
@@ -5426,30 +5426,23 @@
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.692,
-              "ci95_low": 0.6634,
-              "ci95_high": 0.7206
+              "p_win": 0.685,
+              "ci95_low": 0.6562,
+              "ci95_high": 0.7138
             },
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.18,
-              "ci95_low": 0.1562,
-              "ci95_high": 0.2038
+              "p_win": 0.199,
+              "ci95_low": 0.1743,
+              "ci95_high": 0.2237
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.056,
-              "ci95_low": 0.0417,
-              "ci95_high": 0.0703
-            },
-            {
-              "player": "Kateryna Lagno",
-              "fide_id": 14109336,
-              "p_win": 0.037,
-              "ci95_low": 0.0253,
-              "ci95_high": 0.0487
+              "p_win": 0.046,
+              "ci95_low": 0.033,
+              "ci95_high": 0.059
             },
             {
               "player": "Aleksandra Goryachkina",
@@ -5459,22 +5452,29 @@
               "ci95_high": 0.0441
             },
             {
-              "player": "Zhu Jiner",
-              "fide_id": 8608059,
-              "p_win": 0.001,
-              "ci95_low": 0.0,
-              "ci95_high": 0.003
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
+              "p_win": 0.031,
+              "ci95_low": 0.0203,
+              "ci95_high": 0.0417
             },
             {
-              "player": "Bibisara Assaubayeva",
-              "fide_id": 13708694,
-              "p_win": 0.001,
-              "ci95_low": 0.0,
-              "ci95_high": 0.003
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.006,
+              "ci95_low": 0.0012,
+              "ci95_high": 0.0108
             },
             {
               "player": "Tan Zhongyi",
               "fide_id": 8603642,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -5561,58 +5561,58 @@
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.639,
-              "ci95_low": 0.6092,
-              "ci95_high": 0.6688
+              "p_win": 0.626,
+              "ci95_low": 0.596,
+              "ci95_high": 0.656
             },
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.184,
-              "ci95_low": 0.16,
-              "ci95_high": 0.208
+              "p_win": 0.194,
+              "ci95_low": 0.1695,
+              "ci95_high": 0.2185
             },
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.098,
-              "ci95_low": 0.0796,
-              "ci95_high": 0.1164
+              "p_win": 0.114,
+              "ci95_low": 0.0943,
+              "ci95_high": 0.1337
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.034,
-              "ci95_low": 0.0228,
-              "ci95_high": 0.0452
+              "p_win": 0.027,
+              "ci95_low": 0.017,
+              "ci95_high": 0.037
             },
             {
               "player": "Aleksandra Goryachkina",
               "fide_id": 4147103,
-              "p_win": 0.023,
-              "ci95_low": 0.0137,
-              "ci95_high": 0.0323
+              "p_win": 0.019,
+              "ci95_low": 0.0105,
+              "ci95_high": 0.0275
             },
             {
               "player": "Bibisara Assaubayeva",
               "fide_id": 13708694,
-              "p_win": 0.015,
-              "ci95_low": 0.0075,
-              "ci95_high": 0.0225
+              "p_win": 0.013,
+              "ci95_low": 0.006,
+              "ci95_high": 0.02
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.006,
-              "ci95_low": 0.0012,
-              "ci95_high": 0.0108
+              "p_win": 0.007,
+              "ci95_low": 0.0018,
+              "ci95_high": 0.0122
             },
             {
               "player": "Tan Zhongyi",
               "fide_id": 8603642,
-              "p_win": 0.001,
+              "p_win": 0.0,
               "ci95_low": 0.0,
-              "ci95_high": 0.003
+              "ci95_high": 0.0
             }
           ]
         },
@@ -5696,9 +5696,9 @@
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.439,
-              "ci95_low": 0.4082,
-              "ci95_high": 0.4698
+              "p_win": 0.471,
+              "ci95_low": 0.4401,
+              "ci95_high": 0.5019
             },
             {
               "player": "Vaishali Rameshbabu",
@@ -5710,27 +5710,34 @@
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.103,
-              "ci95_low": 0.0842,
-              "ci95_high": 0.1218
+              "p_win": 0.066,
+              "ci95_low": 0.0506,
+              "ci95_high": 0.0814
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.043,
-              "ci95_low": 0.0304,
-              "ci95_high": 0.0556
+              "p_win": 0.042,
+              "ci95_low": 0.0296,
+              "ci95_high": 0.0544
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.028,
-              "ci95_low": 0.0178,
-              "ci95_high": 0.0382
+              "p_win": 0.032,
+              "ci95_low": 0.0211,
+              "ci95_high": 0.0429
             },
             {
               "player": "Aleksandra Goryachkina",
               "fide_id": 4147103,
+              "p_win": 0.002,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0048
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
               "p_win": 0.001,
               "ci95_low": 0.0,
               "ci95_high": 0.003
@@ -5738,13 +5745,6 @@
             {
               "player": "Tan Zhongyi",
               "fide_id": 8603642,
-              "p_win": 0.0,
-              "ci95_low": 0.0,
-              "ci95_high": 0.0
-            },
-            {
-              "player": "Bibisara Assaubayeva",
-              "fide_id": 13708694,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -5831,55 +5831,55 @@
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.735,
-              "ci95_low": 0.7076,
-              "ci95_high": 0.7624
+              "p_win": 0.744,
+              "ci95_low": 0.717,
+              "ci95_high": 0.771
             },
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.2,
-              "ci95_low": 0.1752,
-              "ci95_high": 0.2248
+              "p_win": 0.187,
+              "ci95_low": 0.1628,
+              "ci95_high": 0.2112
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.031,
-              "ci95_low": 0.0203,
-              "ci95_high": 0.0417
+              "p_win": 0.03,
+              "ci95_low": 0.0194,
+              "ci95_high": 0.0406
             },
             {
               "player": "Divya Deshmukh",
               "fide_id": 35006916,
-              "p_win": 0.021,
-              "ci95_low": 0.0121,
-              "ci95_high": 0.0299
+              "p_win": 0.018,
+              "ci95_low": 0.0098,
+              "ci95_high": 0.0262
             },
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.012,
-              "ci95_low": 0.0053,
-              "ci95_high": 0.0187
+              "p_win": 0.017,
+              "ci95_low": 0.009,
+              "ci95_high": 0.025
+            },
+            {
+              "player": "Bibisara Assaubayeva",
+              "fide_id": 13708694,
+              "p_win": 0.004,
+              "ci95_low": 0.0001,
+              "ci95_high": 0.0079
             },
             {
               "player": "Aleksandra Goryachkina",
               "fide_id": 4147103,
-              "p_win": 0.001,
-              "ci95_low": 0.0,
-              "ci95_high": 0.003
-            },
-            {
-              "player": "Tan Zhongyi",
-              "fide_id": 8603642,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
             },
             {
-              "player": "Bibisara Assaubayeva",
-              "fide_id": 13708694,
+              "player": "Tan Zhongyi",
+              "fide_id": 8603642,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -5966,23 +5966,23 @@
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.674,
-              "ci95_low": 0.6449,
-              "ci95_high": 0.7031
+              "p_win": 0.665,
+              "ci95_low": 0.6357,
+              "ci95_high": 0.6943
             },
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.157,
-              "ci95_low": 0.1345,
-              "ci95_high": 0.1795
+              "p_win": 0.168,
+              "ci95_low": 0.1448,
+              "ci95_high": 0.1912
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.127,
-              "ci95_low": 0.1064,
-              "ci95_high": 0.1476
+              "p_win": 0.119,
+              "ci95_low": 0.0989,
+              "ci95_high": 0.1391
             },
             {
               "player": "Aleksandra Goryachkina",
@@ -5994,16 +5994,16 @@
             {
               "player": "Bibisara Assaubayeva",
               "fide_id": 13708694,
-              "p_win": 0.003,
-              "ci95_low": 0.0,
-              "ci95_high": 0.0064
+              "p_win": 0.008,
+              "ci95_low": 0.0025,
+              "ci95_high": 0.0135
             },
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.002,
+              "p_win": 0.003,
               "ci95_low": 0.0,
-              "ci95_high": 0.0048
+              "ci95_high": 0.0064
             },
             {
               "player": "Divya Deshmukh",
@@ -6101,34 +6101,20 @@
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.858,
-              "ci95_low": 0.8364,
-              "ci95_high": 0.8796
+              "p_win": 0.864,
+              "ci95_low": 0.8428,
+              "ci95_high": 0.8852
             },
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.133,
-              "ci95_low": 0.112,
-              "ci95_high": 0.154
-            },
-            {
-              "player": "Kateryna Lagno",
-              "fide_id": 14109336,
-              "p_win": 0.004,
-              "ci95_low": 0.0001,
-              "ci95_high": 0.0079
+              "p_win": 0.135,
+              "ci95_low": 0.1138,
+              "ci95_high": 0.1562
             },
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.004,
-              "ci95_low": 0.0001,
-              "ci95_high": 0.0079
-            },
-            {
-              "player": "Divya Deshmukh",
-              "fide_id": 35006916,
               "p_win": 0.001,
               "ci95_low": 0.0,
               "ci95_high": 0.003
@@ -6136,6 +6122,20 @@
             {
               "player": "Aleksandra Goryachkina",
               "fide_id": 4147103,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Divya Deshmukh",
+              "fide_id": 35006916,
+              "p_win": 0.0,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0
+            },
+            {
+              "player": "Kateryna Lagno",
+              "fide_id": 14109336,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -6236,16 +6236,16 @@
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.612,
-              "ci95_low": 0.5818,
-              "ci95_high": 0.6422
+              "p_win": 0.623,
+              "ci95_low": 0.593,
+              "ci95_high": 0.653
             },
             {
               "player": "Anna Muzychuk",
               "fide_id": 14111330,
-              "p_win": 0.164,
-              "ci95_low": 0.1411,
-              "ci95_high": 0.1869
+              "p_win": 0.157,
+              "ci95_low": 0.1345,
+              "ci95_high": 0.1795
             },
             {
               "player": "Bibisara Assaubayeva",
@@ -6257,9 +6257,9 @@
             {
               "player": "Zhu Jiner",
               "fide_id": 8608059,
-              "p_win": 0.11,
-              "ci95_low": 0.0906,
-              "ci95_high": 0.1294
+              "p_win": 0.106,
+              "ci95_low": 0.0869,
+              "ci95_high": 0.1251
             },
             {
               "player": "Aleksandra Goryachkina",
@@ -6371,27 +6371,27 @@
             {
               "player": "Vaishali Rameshbabu",
               "fide_id": 5091756,
-              "p_win": 0.834,
-              "ci95_low": 0.8109,
-              "ci95_high": 0.8571
+              "p_win": 0.836,
+              "ci95_low": 0.8131,
+              "ci95_high": 0.8589
             },
             {
               "player": "Bibisara Assaubayeva",
               "fide_id": 13708694,
-              "p_win": 0.162,
-              "ci95_low": 0.1392,
-              "ci95_high": 0.1848
+              "p_win": 0.159,
+              "ci95_low": 0.1363,
+              "ci95_high": 0.1817
+            },
+            {
+              "player": "Zhu Jiner",
+              "fide_id": 8608059,
+              "p_win": 0.003,
+              "ci95_low": 0.0,
+              "ci95_high": 0.0064
             },
             {
               "player": "Kateryna Lagno",
               "fide_id": 14109336,
-              "p_win": 0.002,
-              "ci95_low": 0.0,
-              "ci95_high": 0.0048
-            },
-            {
-              "player": "Anna Muzychuk",
-              "fide_id": 14111330,
               "p_win": 0.002,
               "ci95_low": 0.0,
               "ci95_high": 0.0048
@@ -6411,8 +6411,8 @@
               "ci95_high": 0.0
             },
             {
-              "player": "Zhu Jiner",
-              "fide_id": 8608059,
+              "player": "Anna Muzychuk",
+              "fide_id": 14111330,
               "p_win": 0.0,
               "ci95_low": 0.0,
               "ci95_high": 0.0
@@ -6432,97 +6432,97 @@
           {
             "round": 1,
             "top_pick": "Kateryna Lagno",
-            "top_pick_prob": 0.491,
-            "winner_prob": 0.005,
+            "top_pick_prob": 0.484,
+            "winner_prob": 0.006,
             "hit": false
           },
           {
             "round": 2,
             "top_pick": "Aleksandra Goryachkina",
-            "top_pick_prob": 0.483,
-            "winner_prob": 0.078,
+            "top_pick_prob": 0.449,
+            "winner_prob": 0.098,
             "hit": false
           },
           {
             "round": 3,
             "top_pick": "Kateryna Lagno",
-            "top_pick_prob": 0.351,
-            "winner_prob": 0.019,
+            "top_pick_prob": 0.338,
+            "winner_prob": 0.04,
             "hit": false
           },
           {
             "round": 4,
             "top_pick": "Kateryna Lagno",
-            "top_pick_prob": 0.357,
-            "winner_prob": 0.037,
+            "top_pick_prob": 0.377,
+            "winner_prob": 0.039,
             "hit": false
           },
           {
             "round": 5,
             "top_pick": "Anna Muzychuk",
-            "top_pick_prob": 0.42,
-            "winner_prob": 0.007,
+            "top_pick_prob": 0.421,
+            "winner_prob": 0.003,
             "hit": false
           },
           {
             "round": 6,
             "top_pick": "Anna Muzychuk",
-            "top_pick_prob": 0.692,
-            "winner_prob": 0.18,
+            "top_pick_prob": 0.685,
+            "winner_prob": 0.199,
             "hit": false
           },
           {
             "round": 7,
             "top_pick": "Anna Muzychuk",
-            "top_pick_prob": 0.639,
-            "winner_prob": 0.184,
+            "top_pick_prob": 0.626,
+            "winner_prob": 0.194,
             "hit": false
           },
           {
             "round": 8,
             "top_pick": "Anna Muzychuk",
-            "top_pick_prob": 0.439,
+            "top_pick_prob": 0.471,
             "winner_prob": 0.386,
             "hit": false
           },
           {
             "round": 9,
             "top_pick": "Anna Muzychuk",
-            "top_pick_prob": 0.735,
-            "winner_prob": 0.2,
+            "top_pick_prob": 0.744,
+            "winner_prob": 0.187,
             "hit": false
           },
           {
             "round": 10,
             "top_pick": "Vaishali Rameshbabu",
-            "top_pick_prob": 0.674,
-            "winner_prob": 0.674,
+            "top_pick_prob": 0.665,
+            "winner_prob": 0.665,
             "hit": true
           },
           {
             "round": 11,
             "top_pick": "Vaishali Rameshbabu",
-            "top_pick_prob": 0.858,
-            "winner_prob": 0.858,
+            "top_pick_prob": 0.864,
+            "winner_prob": 0.864,
             "hit": true
           },
           {
             "round": 12,
             "top_pick": "Vaishali Rameshbabu",
-            "top_pick_prob": 0.612,
-            "winner_prob": 0.612,
+            "top_pick_prob": 0.623,
+            "winner_prob": 0.623,
             "hit": true
           },
           {
             "round": 13,
             "top_pick": "Vaishali Rameshbabu",
-            "top_pick_prob": 0.834,
-            "winner_prob": 0.834,
+            "top_pick_prob": 0.836,
+            "winner_prob": 0.836,
             "hit": true
           }
         ],
         "converged_from_round": 10,
-        "mean_winner_prob": 0.3134
+        "mean_winner_prob": 0.3185
       }
     }
   ]
