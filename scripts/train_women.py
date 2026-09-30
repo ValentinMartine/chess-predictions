@@ -21,6 +21,7 @@ sys.path.append(str(PROJECT_ROOT / "chess_src"))
 
 from chess_src.features.pipeline import ChessFeaturePipeline
 from chess_src.models.lgbm_model import ChessLGBMModel, FEATURE_COLS
+from scripts.train import surponderer_round_robin
 
 CONFIG_PATH  = PROJECT_ROOT / "config" / "settings_women.yaml"
 DB_PATH      = PROJECT_ROOT / "data" / "chess_matches_women.db"
@@ -82,12 +83,6 @@ def load_and_filter():
     is_candidates = df["tournament"] == TOURNAMENT
     # Lower avg-rating threshold for women's games
     df = df[(df["_avg"] >= 2300) | is_candidates].drop(columns=["_wr", "_br", "_avg"])
-
-    # Oversample round-robin events to boost in-tournament signal
-    rr_mask = df["tournament"].apply(is_round_robin) | is_candidates
-    df_rr_extra = pd.concat([df[rr_mask]] * 2, ignore_index=True)
-    df = pd.concat([df, df_rr_extra], ignore_index=True)
-
     return df
 
 
@@ -124,7 +119,9 @@ def train():
     n = len(df_features)
     i_cal  = int(n * 0.70)
     i_test = int(n * 0.85)
-    df_train = df_features.iloc[:i_cal]
+    df_train = surponderer_round_robin(
+        df_features.iloc[:i_cal], TOURNAMENT, est_round_robin=is_round_robin
+    )
     df_cal   = df_features.iloc[i_cal:i_test]
     df_test  = df_features.iloc[i_test:]
     logger.info(f"Split — Train:{len(df_train)}  Cal:{len(df_cal)}  Test:{len(df_test)}")

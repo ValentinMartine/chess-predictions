@@ -74,11 +74,6 @@ def load_and_filter(db_path, config_path):
     df["_avg"] = (df["_wr"] + df["_br"]) / 2
     is_candidates = df["tournament"] == "Candidates 2026"
     df = df[(df["_avg"] >= 2600) | is_candidates].drop(columns=["_wr", "_br", "_avg"])
-
-    rr_mask = df["tournament"].apply(is_round_robin) | is_candidates
-    df_rr_extra = pd.concat([df[rr_mask]] * 2, ignore_index=True)
-    df = pd.concat([df, df_rr_extra], ignore_index=True)
-
     return df, config
 
 
@@ -87,6 +82,19 @@ def build_features(df, config, db_path):
     df_f = pipeline.process(df)
     df_f = df_f.dropna(subset=["result"])
     return df_f.sort_values("played_at").reset_index(drop=True)
+
+
+# Après le calcul des variables et sur le seul jeu d'entraînement : dupliquées avant,
+# les copies d'une partie voyaient son résultat dans l'Elo et les points au tournoi.
+def surponderer_round_robin(df, tournoi_cible, copies=2, est_round_robin=is_round_robin):
+    masque = df["tournament"].apply(est_round_robin) | (df["tournament"] == tournoi_cible)
+    df = pd.concat([df] + [df[masque]] * copies, ignore_index=True)
+    return df.sort_values("played_at", kind="stable").reset_index(drop=True)
+
+
+def preparer_donnees(db_path, config_path):
+    df, config = load_and_filter(db_path, config_path)
+    return build_features(df, config, db_path)
 
 
 def train():
@@ -100,12 +108,8 @@ def train():
         logger.error("FATAL: No candidates found in config.")
         return
 
-    logger.info("Loading and filtering data...")
-    df, config = load_and_filter(db_path, config_path)
-    logger.info(f"Dataset: {len(df)} rows after filters")
-
-    logger.info("Computing features (this takes ~1 min)...")
-    df_features = build_features(df, config, db_path)
+    logger.info("Loading data and computing features (this takes ~1 min)...")
+    df_features = preparer_donnees(db_path, config_path)
     logger.info(
         f"Feature rows: {len(df_features)}  |  Elo Diff Std={df_features['elo_diff'].std():.1f}"
     )
@@ -118,7 +122,7 @@ def train():
     n = len(df_features)
     i_cal = int(n * 0.70)
     i_test = int(n * 0.85)
-    df_train = df_features.iloc[:i_cal]
+    df_train = surponderer_round_robin(df_features.iloc[:i_cal], "Candidates 2026")
     df_cal = df_features.iloc[i_cal:i_test]
     df_test = df_features.iloc[i_test:]
     logger.info(

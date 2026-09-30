@@ -21,8 +21,13 @@ rondes <= R. Le modèle ne voit jamais l'avenir.
 
 ## Comportement connu
 Le modèle est un **suiveur de momentum** : il part du favori Elo et réévalue dès qu'un leader se détache.
-Open : favori confirmé dès la ronde 4 (proba moyenne du vainqueur 71,6 %). Féminin, très disputé :
-ronde 10 seulement (29,0 %). C'est le profil attendu, pas un défaut à corriger.
+Open : favori confirmé dès la ronde 4 (proba moyenne du vainqueur 72,1 %). Féminin, très disputé :
+ronde 8 (26,6 %). Log-loss par partie en test : 0,955 open, 1,021 féminin (Elo seul : 0,997 et 1,034).
+
+## Fuite corrigée le 30/09/2026
+La surpondération des rondes fermées se fait **après** le calcul des variables et sur le seul
+entraînement (`surponderer_round_robin`). Dupliquées avant, les copies d'une partie voyaient son
+résultat dans l'Elo et les points au tournoi. Test : `tests/test_preparation_entrainement.py`.
 
 ## Historique
 Streamlit a été **retiré** le 03/07/2026 au profit de la page web du site : ne pas le réintroduire.

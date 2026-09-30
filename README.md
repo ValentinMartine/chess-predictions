@@ -32,11 +32,20 @@ réévalue dès qu'un leader se détache.
 
 | Section | Vainqueur réel | Favori confirmé à partir de | Proba moyenne du vainqueur |
 | --- | --- | --- | --- |
-| Open | Javokhir Sindarov | ronde 4 | 71,6 % |
-| Féminin | Vaishali Rameshbabu | ronde 10 | 29,0 % |
+| Open | Javokhir Sindarov | ronde 4 | 72,1 % |
+| Féminin | Vaishali Rameshbabu | ronde 8 | 26,6 % |
 
-La section open (vainqueur qui se détache tôt) est bien captée ; la section féminine, très
-disputée, l'est plus tardivement — un profil attendu pour ce type de modèle.
+Log-loss par partie sur les 15 % les plus récents (défaite / nulle / victoire) :
+
+| Section | Modèle | Elo seul | Fréquences |
+| --- | --- | --- | --- |
+| Open | 0,955 | 0,997 | 1,095 |
+| Féminin | 1,021 | 1,034 | 1,113 |
+
+Deux tournois ne suffisent pas à juger la probabilité de titre : la log-loss par partie est la
+mesure à suivre. Jusqu'au 30/09/2026, les rondes fermées étaient dupliquées avant le calcul des
+variables et les copies voyaient leur propre résultat : l'ancienne log-loss de 0,67 sur les
+Candidats open venait de cette fuite.
 
 ## Structure
 
